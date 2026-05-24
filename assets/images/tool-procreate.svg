@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="brushGrad" x1="20%" y1="80%" x2="80%" y2="20%">
+      <stop offset="0%" stop-color="#ff6a3d"/>
+      <stop offset="22%" stop-color="#ff9a3d"/>
+      <stop offset="42%" stop-color="#ffd23d"/>
+      <stop offset="60%" stop-color="#3dbf6a"/>
+      <stop offset="78%" stop-color="#3d8fff"/>
+      <stop offset="100%" stop-color="#a13dff"/>
+    </linearGradient>
+    <radialGradient id="bgGrad" cx="30%" cy="20%" r="100%">
+      <stop offset="0%" stop-color="#2a2a2c"/>
+      <stop offset="60%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="highlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".35"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M 56 0 H 200 C 230 0 256 26 256 56 V 200 C 256 230 230 256 200 256 H 56 C 26 256 0 230 0 200 V 56 C 0 26 26 0 56 0 Z"
+        fill="url(#bgGrad)"/>
+  <g filter="url(#glow)">
+    <path d="M 50 210 C 70 195 90 188 112 178 C 138 168 160 156 184 142 C 200 132 214 120 220 108 C 224 100 220 90 212 86 C 200 82 188 84 174 90 C 152 100 130 112 108 124 C 86 138 66 154 54 174 C 46 188 44 200 50 210 Z"
+          fill="url(#brushGrad)"/>
+    <path d="M 60 200 C 80 188 100 178 122 170 C 144 162 164 152 182 142 C 196 134 208 124 214 114 C 210 104 198 104 186 108 C 168 116 148 126 128 138 C 106 152 86 168 70 186 C 64 192 60 198 60 200 Z"
+          fill="url(#highlight)"/>
+  </g>
+  <circle cx="218" cy="98" r="3" fill="#a13dff" opacity=".6"/>
+  <circle cx="46" cy="208" r="2.5" fill="#ff6a3d" opacity=".7"/>
+</svg>

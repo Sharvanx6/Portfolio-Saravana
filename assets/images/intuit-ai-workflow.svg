@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540">
+  <defs>
+    <linearGradient id="loopGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#137250"/>
+      <stop offset="1" stop-color="#0077c5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- title -->
+  <text x="600" y="42" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" letter-spacing=".14em" fill="#6b6c72">A REPEATABLE LOOP · NOT A ONE-SHOT GENERATION</text>
+
+  <!-- horizontal flow with 4 nodes -->
+  <g transform="translate(70 100)">
+    <!-- arc background -->
+    <path d="M 90 230 Q 530 80 970 230" stroke="url(#loopGrad)" stroke-width="2" fill="none" stroke-dasharray="6 6" opacity=".5"/>
+
+    <!-- node 1: scenario brief -->
+    <g transform="translate(0 130)">
+      <rect x="0" y="0" width="200" height="200" rx="14" fill="#fff" stroke="#d4d7dc"/>
+      <circle cx="30" cy="34" r="14" fill="#0a1628"/>
+      <text x="30" y="39" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="12" font-weight="700" fill="#fff">1</text>
+      <text x="56" y="40" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" letter-spacing=".1em" fill="#6b6c72">FRAME</text>
+      <text x="20" y="76" font-family="Fraunces, serif" font-size="17" font-weight="600" fill="#0a1628">Scenario brief</text>
+      <text x="20" y="100" font-family="Inter Tight, sans-serif" font-size="12" fill="#414550">I write the brief: state,</text>
+      <text x="20" y="116" font-family="Inter Tight, sans-serif" font-size="12" fill="#414550">user goal, edge cases,</text>
+      <text x="20" y="132" font-family="Inter Tight, sans-serif" font-size="12" fill="#414550">success criteria.</text>
+      <!-- mini badges -->
+      <g transform="translate(20 158)">
+        <rect width="56" height="20" rx="10" fill="#e8f0fa"/>
+        <text x="28" y="14" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="10" font-weight="500" fill="#0077c5">state</text>
+        <rect x="64" width="42" height="20" rx="10" fill="#e8f0fa"/>
+        <text x="85" y="14" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="10" font-weight="500" fill="#0077c5">goal</text>
+        <rect x="0" y="26" width="68" height="20" rx="10" fill="#e8f0fa"/>
+        <text x="34" y="40" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="10" font-weight="500" fill="#0077c5">edge case</text>
+      </g>
+    </g>
+
+    <!-- arrow 1 -->
+    <g transform="translate(208 220)" fill="none" stroke="#6b6c72" stroke-width="1.6">
+      <line x1="0" y1="10" x2="44" y2="10" stroke-linecap="round"/>
+      <path d="M 36 4 L 44 10 L 36 16" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- node 2: AI exploration -->
+    <g transform="translate(260 130)">
+      <rect x="0" y="0" width="220" height="200" rx="14" fill="#0c4e3a"/>
+      <circle cx="30" cy="34" r="14" fill="#9ee8b9"/>
+      <text x="30" y="39" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="12" font-weight="700" fill="#0c4e3a">2</text>
+      <text x="56" y="40" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" letter-spacing=".1em" fill="#9ee8b9">EXPLORE · AI</text>
+      <text x="20" y="76" font-family="Fraunces, serif" font-size="17" font-weight="600" fill="#fff">Pattern + edge-case</text>
+      <text x="20" y="96" font-family="Fraunces, serif" font-size="17" font-weight="600" fill="#fff">simulation</text>
+      <text x="20" y="118" font-family="Inter Tight, sans-serif" font-size="12" fill="#cde7d8">10-15 variant copy lines,</text>
+      <text x="20" y="134" font-family="Inter Tight, sans-serif" font-size="12" fill="#cde7d8">state-tree branches,</text>
+      <text x="20" y="150" font-family="Inter Tight, sans-serif" font-size="12" fill="#cde7d8">flow forks per scenario.</text>
+      <!-- spark icon -->
+      <g transform="translate(170 22)" stroke="#9ee8b9" stroke-width="1.6" fill="none">
+        <path d="M 12 0 L 14 10 L 24 12 L 14 14 L 12 24 L 10 14 L 0 12 L 10 10 Z" fill="#9ee8b9"/>
+      </g>
+      <!-- chip row -->
+      <g transform="translate(20 168)">
+        <rect width="60" height="20" rx="10" fill="rgba(255,255,255,.12)"/>
+        <text x="30" y="14" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="10" font-weight="500" fill="#cde7d8">variants</text>
+        <rect x="68" width="60" height="20" rx="10" fill="rgba(255,255,255,.12)"/>
+        <text x="98" y="14" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="10" font-weight="500" fill="#cde7d8">branches</text>
+      </g>
+    </g>
+
+    <g transform="translate(488 220)" fill="none" stroke="#6b6c72" stroke-width="1.6">
+      <line x1="0" y1="10" x2="44" y2="10" stroke-linecap="round"/>
+      <path d="M 36 4 L 44 10 L 36 16" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- node 3: curation -->
+    <g transform="translate(540 130)">
+      <rect x="0" y="0" width="200" height="200" rx="14" fill="#fff" stroke="#d4d7dc"/>
+      <circle cx="30" cy="34" r="14" fill="#0a1628"/>
+      <text x="30" y="39" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="12" font-weight="700" fill="#fff">3</text>
+      <text x="56" y="40" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" letter-spacing=".1em" fill="#6b6c72">CURATE · ME</text>
+      <text x="20" y="76" font-family="Fraunces, serif" font-size="17" font-weight="600" fill="#0a1628">Human judgement</text>
+      <text x="20" y="98" font-family="Inter Tight, sans-serif" font-size="12" fill="#414550">Filter for clarity,</text>
+      <text x="20" y="114" font-family="Inter Tight, sans-serif" font-size="12" fill="#414550">ethical retention,</text>
+      <text x="20" y="130" font-family="Inter Tight, sans-serif" font-size="12" fill="#414550">accessibility, IDS fit.</text>
+      <!-- check / x indicators -->
+      <g transform="translate(20 156)">
+        <circle cx="8" cy="8" r="8" fill="#dcf2dd"/><text x="8" y="12" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="700" fill="#108000">✓</text>
+        <rect x="22" y="3" width="48" height="3" rx="1.5" fill="#393a3d"/>
+        <rect x="22" y="10" width="64" height="3" rx="1.5" fill="#babec5"/>
+
+        <circle cx="8" cy="34" r="8" fill="#dcf2dd"/><text x="8" y="38" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="700" fill="#108000">✓</text>
+        <rect x="22" y="29" width="56" height="3" rx="1.5" fill="#393a3d"/>
+        <rect x="22" y="36" width="48" height="3" rx="1.5" fill="#babec5"/>
+
+        <circle cx="100" cy="8" r="8" fill="#fbd6d6"/><text x="100" y="12" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="700" fill="#b3262d">✕</text>
+        <circle cx="100" cy="34" r="8" fill="#fbd6d6"/><text x="100" y="38" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="700" fill="#b3262d">✕</text>
+      </g>
+    </g>
+
+    <g transform="translate(748 220)" fill="none" stroke="#6b6c72" stroke-width="1.6">
+      <line x1="0" y1="10" x2="44" y2="10" stroke-linecap="round"/>
+      <path d="M 36 4 L 44 10 L 36 16" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- node 4: builder commit -->
+    <g transform="translate(800 130)">
+      <rect x="0" y="0" width="220" height="200" rx="14" fill="#fff" stroke="#2ca01c" stroke-width="1.6"/>
+      <circle cx="30" cy="34" r="14" fill="#2ca01c"/>
+      <text x="30" y="39" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="12" font-weight="700" fill="#fff">4</text>
+      <text x="56" y="40" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" letter-spacing=".1em" fill="#0c6e4f">COMMIT TO BUILDER</text>
+      <text x="20" y="76" font-family="Fraunces, serif" font-size="17" font-weight="600" fill="#0a1628">Reusable pattern,</text>
+      <text x="20" y="96" font-family="Fraunces, serif" font-size="17" font-weight="600" fill="#0a1628">not a one-off screen</text>
+      <text x="20" y="118" font-family="Inter Tight, sans-serif" font-size="12" fill="#414550">Curated decisions become</text>
+      <text x="20" y="134" font-family="Inter Tight, sans-serif" font-size="12" fill="#414550">a configurable template</text>
+      <text x="20" y="150" font-family="Inter Tight, sans-serif" font-size="12" fill="#414550">in the builder library.</text>
+      <!-- template mini -->
+      <g transform="translate(20 168)">
+        <rect width="180" height="20" rx="4" fill="#eaf6e9"/>
+        <rect x="6" y="6" width="60" height="8" rx="2" fill="#0c6e4f"/>
+        <rect x="72" y="6" width="44" height="8" rx="2" fill="#9ee8b9"/>
+        <rect x="122" y="6" width="50" height="8" rx="2" fill="#9ee8b9"/>
+      </g>
+    </g>
+
+    <!-- back-loop arrow under everything -->
+    <path d="M 910 380 L 910 410 L 100 410 L 100 380"
+          stroke="#0a1628" stroke-width="1.5" fill="none" stroke-dasharray="4 4"/>
+    <path d="M 92 372 L 100 380 L 108 372" stroke="#0a1628" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <g transform="translate(444 392)">
+      <rect width="170" height="32" rx="16" fill="#fff" stroke="#0a1628"/>
+      <text x="85" y="20" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" fill="#0a1628">repeat for next scenario</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,259 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" font-family="Inter Tight, sans-serif">
+  <text x="24" y="34" font-size="11" font-weight="600" letter-spacing=".14em" fill="#6b6c72">WHAT THE BUILDER PRODUCES · CUSTOMER-FACING UPGRADE FLOW</text>
+
+  <!-- horizontal flow with 3 screens + arrows + labels -->
+
+  <!-- SCREEN 1: subscription card with switch CTA -->
+  <g transform="translate(40 90)">
+    <text x="0" y="-20" font-size="11" font-weight="600" letter-spacing=".1em" fill="#0a1628">SCREEN 1 · ENTRY POINT</text>
+    <text x="0" y="-6" font-size="11" fill="#6b6c72">Subscription card on the B&amp;S page</text>
+
+    <!-- browser chrome -->
+    <rect x="0" y="0" width="340" height="500" rx="10" fill="#fff" stroke="#d4d7dc"/>
+    <rect x="0" y="0" width="340" height="28" rx="10" fill="#f4f5f8"/>
+    <rect x="0" y="20" width="340" height="8" fill="#f4f5f8"/>
+    <circle cx="14" cy="14" r="3" fill="#fc625d"/>
+    <circle cx="26" cy="14" r="3" fill="#fdbc40"/>
+    <circle cx="38" cy="14" r="3" fill="#34c749"/>
+
+    <!-- account header -->
+    <g transform="translate(24 44)">
+      <text font-size="13" font-weight="600" fill="#393a3d">Bills &amp; Subscriptions</text>
+      <text y="18" font-size="10" fill="#6b6c72">Manage your plans and billing</text>
+    </g>
+
+    <!-- subscription card -->
+    <g transform="translate(24 92)">
+      <rect width="292" height="240" rx="8" fill="#fff" stroke="#d4d7dc"/>
+      <rect width="292" height="6" rx="3" fill="#2ca01c"/>
+      <text x="20" y="34" font-size="14" font-weight="600" fill="#393a3d">FlowBooks Plus</text>
+      <!-- status pill -->
+      <rect x="20" y="42" width="84" height="20" rx="10" fill="#dcf2dd"/>
+      <text x="62" y="56" text-anchor="middle" font-size="10" font-weight="600" fill="#108000" letter-spacing=".06em">SUBSCRIBED</text>
+
+      <!-- pricing -->
+      <text x="20" y="100" font-size="28" font-weight="700" fill="#393a3d">$75</text>
+      <text x="72" y="100" font-size="13" font-weight="500" fill="#6b6c72">/mo</text>
+      <text x="20" y="120" font-size="10" fill="#6b6c72">+ applicable taxes</text>
+
+      <!-- divider -->
+      <line x1="20" y1="140" x2="272" y2="140" stroke="#d4d7dc"/>
+
+      <!-- meta rows -->
+      <text x="20" y="160" font-size="11" fill="#6b6c72">Next charge</text>
+      <text x="272" y="160" text-anchor="end" font-size="11" font-weight="600" fill="#393a3d">Jun 12, 2026</text>
+      <text x="20" y="180" font-size="11" fill="#6b6c72">Payment</text>
+      <text x="272" y="180" text-anchor="end" font-size="11" font-weight="600" fill="#393a3d">Visa •••• 4242</text>
+
+      <!-- CTA: Switch plan (highlighted) -->
+      <g transform="translate(20 196)">
+        <rect width="252" height="30" rx="15" fill="#fff" stroke="#0077c5" stroke-width="1.5"/>
+        <text x="126" y="20" text-anchor="middle" font-size="12" font-weight="600" fill="#0077c5">Switch plan →</text>
+      </g>
+    </g>
+
+    <!-- annotation arrow pointing to Switch CTA -->
+    <g transform="translate(280 310)">
+      <path d="M 0 0 L 36 0" stroke="#7c5cd6" stroke-width="1.4" fill="none" stroke-dasharray="3 3"/>
+      <circle cx="0" cy="0" r="3" fill="#7c5cd6"/>
+    </g>
+    <g transform="translate(320 290)">
+      <rect width="20" height="22" rx="3" fill="#7c5cd6"/>
+      <text x="10" y="16" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">a</text>
+    </g>
+  </g>
+
+  <!-- arrow 1→2 -->
+  <g transform="translate(400 320)" stroke="#0a1628" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <line x1="0" y1="10" x2="56" y2="10"/>
+    <path d="M 48 4 L 56 10 L 48 16" stroke-linejoin="round"/>
+    <text x="28" y="2" text-anchor="middle" font-size="10" font-weight="600" fill="#6b6c72" stroke="none" font-family="Inter Tight, sans-serif">tap</text>
+  </g>
+
+  <!-- SCREEN 2: comparison trowser -->
+  <g transform="translate(470 90)">
+    <text x="0" y="-20" font-size="11" font-weight="600" letter-spacing=".1em" fill="#0a1628">SCREEN 2 · PLAN COMPARISON</text>
+    <text x="0" y="-6" font-size="11" fill="#6b6c72">Trowser overlay with 3-up plan compare</text>
+
+    <rect x="0" y="0" width="340" height="500" rx="10" fill="#fff" stroke="#d4d7dc"/>
+    <rect x="0" y="0" width="340" height="28" rx="10" fill="#f4f5f8"/>
+    <rect x="0" y="20" width="340" height="8" fill="#f4f5f8"/>
+    <circle cx="14" cy="14" r="3" fill="#fc625d"/>
+    <circle cx="26" cy="14" r="3" fill="#fdbc40"/>
+    <circle cx="38" cy="14" r="3" fill="#34c749"/>
+
+    <!-- trowser header -->
+    <g transform="translate(0 28)">
+      <rect width="340" height="44" fill="#fff"/>
+      <line x1="0" y1="44" x2="340" y2="44" stroke="#d4d7dc"/>
+      <text x="24" y="28" font-size="14" font-weight="600" fill="#393a3d">Switch plan</text>
+      <text x="316" y="28" text-anchor="end" font-size="14" fill="#6b6c72">✕</text>
+    </g>
+
+    <!-- header copy -->
+    <text x="24" y="96" font-size="13" font-weight="600" fill="#393a3d">Let's find the best fit for your team</text>
+    <text x="24" y="112" font-size="10" fill="#6b6c72">Compare features. Switch anytime.</text>
+
+    <!-- 3 plan cards -->
+    <g transform="translate(24 128)">
+      <!-- plan 1: simple -->
+      <g>
+        <rect width="92" height="252" rx="6" fill="#fff" stroke="#d4d7dc"/>
+        <text x="12" y="22" font-size="11" font-weight="600" fill="#393a3d">Simple</text>
+        <text x="12" y="46" font-size="18" font-weight="700" fill="#393a3d">$25</text>
+        <text x="50" y="46" font-size="10" fill="#6b6c72">/mo</text>
+        <line x1="12" y1="60" x2="80" y2="60" stroke="#d4d7dc"/>
+        <g transform="translate(12 76)" font-size="9" fill="#414550">
+          <circle cx="3" cy="0" r="2" fill="#2ca01c"/><text x="10" y="3">Income &amp; expense</text>
+          <circle cx="3" cy="18" r="2" fill="#2ca01c"/><text x="10" y="21">Invoicing</text>
+          <text x="0" y="40" fill="#babec5">— Reports</text>
+          <text x="0" y="56" fill="#babec5">— Bill management</text>
+        </g>
+        <rect x="12" y="216" width="68" height="22" rx="11" fill="#fff" stroke="#393a3d"/>
+        <text x="46" y="231" text-anchor="middle" font-size="10" font-weight="600" fill="#393a3d">Select</text>
+      </g>
+
+      <!-- plan 2: plus (CURRENT — highlighted) -->
+      <g transform="translate(100 -6)">
+        <rect width="92" height="264" rx="6" fill="#fff" stroke="#2ca01c" stroke-width="1.5"/>
+        <!-- CURRENT badge -->
+        <g transform="translate(8 -10)">
+          <rect width="64" height="18" rx="9" fill="#2ca01c"/>
+          <text x="32" y="12" text-anchor="middle" font-size="9" font-weight="700" fill="#fff" letter-spacing=".06em">CURRENT</text>
+        </g>
+        <text x="12" y="34" font-size="11" font-weight="600" fill="#393a3d">Plus</text>
+        <text x="12" y="58" font-size="18" font-weight="700" fill="#393a3d">$75</text>
+        <text x="50" y="58" font-size="10" fill="#6b6c72">/mo</text>
+        <line x1="12" y1="72" x2="80" y2="72" stroke="#d4d7dc"/>
+        <g transform="translate(12 88)" font-size="9" fill="#414550">
+          <circle cx="3" cy="0" r="2" fill="#2ca01c"/><text x="10" y="3">Income &amp; expense</text>
+          <circle cx="3" cy="18" r="2" fill="#2ca01c"/><text x="10" y="21">Invoicing</text>
+          <circle cx="3" cy="36" r="2" fill="#2ca01c"/><text x="10" y="39">Reports</text>
+          <circle cx="3" cy="54" r="2" fill="#2ca01c"/><text x="10" y="57">Bill management</text>
+        </g>
+        <rect x="12" y="222" width="68" height="22" rx="11" fill="#dcf2dd"/>
+        <text x="46" y="237" text-anchor="middle" font-size="10" font-weight="600" fill="#108000">Current</text>
+      </g>
+
+      <!-- plan 3: advanced -->
+      <g transform="translate(200 0)">
+        <rect width="92" height="252" rx="6" fill="#fff" stroke="#d4d7dc"/>
+        <text x="12" y="22" font-size="11" font-weight="600" fill="#393a3d">Advanced</text>
+        <text x="12" y="46" font-size="18" font-weight="700" fill="#393a3d">$150</text>
+        <text x="58" y="46" font-size="10" fill="#6b6c72">/mo</text>
+        <line x1="12" y1="60" x2="80" y2="60" stroke="#d4d7dc"/>
+        <g transform="translate(12 76)" font-size="9" fill="#414550">
+          <circle cx="3" cy="0" r="2" fill="#2ca01c"/><text x="10" y="3">Everything in Plus</text>
+          <circle cx="3" cy="18" r="2" fill="#2ca01c"/><text x="10" y="21">Custom roles</text>
+          <circle cx="3" cy="36" r="2" fill="#2ca01c"/><text x="10" y="39">Workflow rules</text>
+          <circle cx="3" cy="54" r="2" fill="#2ca01c"/><text x="10" y="57">25 users</text>
+        </g>
+        <rect x="12" y="216" width="68" height="22" rx="11" fill="#2ca01c"/>
+        <text x="46" y="231" text-anchor="middle" font-size="10" font-weight="600" fill="#fff">Upgrade →</text>
+      </g>
+    </g>
+
+    <!-- annotation arrow -->
+    <g transform="translate(280 320)">
+      <path d="M 0 0 L 36 0" stroke="#7c5cd6" stroke-width="1.4" fill="none" stroke-dasharray="3 3"/>
+      <circle cx="0" cy="0" r="3" fill="#7c5cd6"/>
+    </g>
+    <g transform="translate(320 300)">
+      <rect width="20" height="22" rx="3" fill="#7c5cd6"/>
+      <text x="10" y="16" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">b</text>
+    </g>
+  </g>
+
+  <!-- arrow 2→3 -->
+  <g transform="translate(830 320)" stroke="#0a1628" stroke-width="1.6" fill="none" stroke-linecap="round">
+    <line x1="0" y1="10" x2="56" y2="10"/>
+    <path d="M 48 4 L 56 10 L 48 16" stroke-linejoin="round"/>
+    <text x="28" y="2" text-anchor="middle" font-size="10" font-weight="600" fill="#6b6c72" stroke="none" font-family="Inter Tight, sans-serif">tap upgrade</text>
+  </g>
+
+  <!-- SCREEN 3: confirmation -->
+  <g transform="translate(900 90)">
+    <text x="0" y="-20" font-size="11" font-weight="600" letter-spacing=".1em" fill="#0a1628">SCREEN 3 · CONFIRMATION</text>
+    <text x="0" y="-6" font-size="11" fill="#6b6c72">Success modal with next-step bullets</text>
+
+    <rect x="0" y="0" width="340" height="500" rx="10" fill="#fff" stroke="#d4d7dc"/>
+    <rect x="0" y="0" width="340" height="28" rx="10" fill="#f4f5f8"/>
+    <rect x="0" y="20" width="340" height="8" fill="#f4f5f8"/>
+    <circle cx="14" cy="14" r="3" fill="#fc625d"/>
+    <circle cx="26" cy="14" r="3" fill="#fdbc40"/>
+    <circle cx="38" cy="14" r="3" fill="#34c749"/>
+
+    <!-- dimmed B&S background -->
+    <rect x="0" y="28" width="340" height="472" fill="rgba(10,22,40,.35)"/>
+
+    <!-- modal -->
+    <g transform="translate(30 70)">
+      <rect width="280" height="360" rx="10" fill="#fff"/>
+      <text x="256" y="28" font-size="14" fill="#6b6c72">✕</text>
+
+      <!-- success icon -->
+      <circle cx="140" cy="80" r="28" fill="#2ca01c"/>
+      <path d="M 128 80 L 138 90 L 154 72" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- heading -->
+      <text x="140" y="142" text-anchor="middle" font-size="16" font-weight="600" fill="#393a3d">Welcome to FlowBooks</text>
+      <text x="140" y="160" text-anchor="middle" font-size="16" font-weight="600" fill="#393a3d">Advanced</text>
+
+      <!-- subheading -->
+      <text x="140" y="186" text-anchor="middle" font-size="11" fill="#6b6c72">Your plan is upgraded effective today.</text>
+      <text x="140" y="200" text-anchor="middle" font-size="11" fill="#6b6c72">We'll prorate the difference on your next bill.</text>
+
+      <!-- section label -->
+      <text x="20" y="232" font-size="12" font-weight="600" fill="#393a3d">What happens next?</text>
+
+      <!-- bullet list -->
+      <g transform="translate(20 246)" font-size="11" fill="#414550">
+        <circle cx="3" cy="6" r="1.6" fill="#393a3d"/>
+        <text x="12" y="9">We'll email confirmation to the</text>
+        <text x="12" y="22">master admin at saravana@...com.</text>
+        <circle cx="3" cy="46" r="1.6" fill="#393a3d"/>
+        <text x="12" y="49">To manage plans, head to your</text>
+        <text x="12" y="62" fill="#0077c5">Bills &amp; Subscription page.</text>
+      </g>
+
+      <!-- primary CTA -->
+      <g transform="translate(90 320)">
+        <rect width="100" height="28" rx="14" fill="#2ca01c"/>
+        <text x="50" y="19" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Get started</text>
+      </g>
+    </g>
+
+    <!-- annotation arrow -->
+    <g transform="translate(280 360)">
+      <path d="M 0 0 L 36 0" stroke="#7c5cd6" stroke-width="1.4" fill="none" stroke-dasharray="3 3"/>
+      <circle cx="0" cy="0" r="3" fill="#7c5cd6"/>
+    </g>
+    <g transform="translate(320 340)">
+      <rect width="20" height="22" rx="3" fill="#7c5cd6"/>
+      <text x="10" y="16" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">c</text>
+    </g>
+  </g>
+
+  <!-- annotation legend at the bottom -->
+  <g transform="translate(40 640)" font-size="11">
+    <rect width="1200" height="60" rx="6" fill="#fafbfc" stroke="#d4d7dc"/>
+    <g transform="translate(20 22)">
+      <rect width="18" height="20" rx="3" fill="#7c5cd6"/>
+      <text x="9" y="14" text-anchor="middle" font-weight="700" fill="#fff">a</text>
+      <text x="28" y="14" font-weight="600" fill="#0a1628">Subscription card · primitive</text>
+      <text x="28" y="30" fill="#6b6c72">Same component reused on every B&amp;S page across surfaces.</text>
+    </g>
+    <g transform="translate(420 22)">
+      <rect width="18" height="20" rx="3" fill="#7c5cd6"/>
+      <text x="9" y="14" text-anchor="middle" font-weight="700" fill="#fff">b</text>
+      <text x="28" y="14" font-weight="600" fill="#0a1628">Comparison block · primitive</text>
+      <text x="28" y="30" fill="#6b6c72">3-col plan compare with "current" indicator and per-plan CTA.</text>
+    </g>
+    <g transform="translate(820 22)">
+      <rect width="18" height="20" rx="3" fill="#7c5cd6"/>
+      <text x="9" y="14" text-anchor="middle" font-weight="700" fill="#fff">c</text>
+      <text x="28" y="14" font-weight="600" fill="#0a1628">Confirmation modal · primitive</text>
+      <text x="28" y="30" fill="#6b6c72">Success state with curated next-step copy and a single forward CTA.</text>
+    </g>
+  </g>
+</svg>

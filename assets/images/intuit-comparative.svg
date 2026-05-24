@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520">
+  <!-- legend -->
+  <text x="24" y="34" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" letter-spacing=".14em" fill="#6b6c72">COMPARATIVE UX TEARDOWN · WHAT WE STUDIED</text>
+
+  <!-- Card 1: Notion -->
+  <g transform="translate(24 60)">
+    <rect width="370" height="430" rx="14" fill="#fff" stroke="#d4d7dc"/>
+    <!-- header -->
+    <rect x="0" y="0" width="370" height="68" rx="14" fill="#0a1628"/>
+    <rect x="0" y="54" width="370" height="14" fill="#0a1628"/>
+    <text x="24" y="42" font-family="Fraunces, serif" font-size="22" font-weight="600" fill="#fff">Notion</text>
+    <text x="24" y="58" font-family="Inter Tight, sans-serif" font-size="11" fill="#9aa1b3">workspace · seat-based</text>
+
+    <!-- focus areas -->
+    <text x="24" y="100" font-family="Inter Tight, sans-serif" font-size="10" font-weight="600" letter-spacing=".12em" fill="#6b6c72">FOCUS</text>
+    <g transform="translate(24 110)">
+      <rect width="80" height="22" rx="11" fill="#f4f5f8"/>
+      <text x="40" y="15" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="500" fill="#393a3d">Seat upgrades</text>
+      <rect x="88" width="92" height="22" rx="11" fill="#f4f5f8"/>
+      <text x="134" y="15" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="500" fill="#393a3d">Plan switching</text>
+      <rect x="188" width="84" height="22" rx="11" fill="#f4f5f8"/>
+      <text x="230" y="15" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="500" fill="#393a3d">Soft retention</text>
+    </g>
+
+    <!-- abstract mockup -->
+    <g transform="translate(24 152)">
+      <rect width="322" height="170" rx="6" fill="#f7f7f7" stroke="#e6e6e6"/>
+      <!-- plan cards row -->
+      <g transform="translate(14 14)">
+        <rect width="92" height="142" rx="6" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="20" font-family="Inter Tight, sans-serif" font-size="10" font-weight="600" fill="#393a3d">Free</text>
+        <text x="10" y="42" font-family="Inter Tight, sans-serif" font-size="18" font-weight="700" fill="#393a3d">$0</text>
+        <line x1="10" y1="54" x2="82" y2="54" stroke="#d4d7dc"/>
+        <circle cx="14" cy="68" r="2" fill="#2ca01c"/><rect x="22" y="66" width="40" height="3" rx="1.5" fill="#babec5"/>
+        <circle cx="14" cy="80" r="2" fill="#2ca01c"/><rect x="22" y="78" width="56" height="3" rx="1.5" fill="#babec5"/>
+        <circle cx="14" cy="92" r="2" fill="#2ca01c"/><rect x="22" y="90" width="48" height="3" rx="1.5" fill="#babec5"/>
+        <rect x="10" y="116" width="72" height="14" rx="3" fill="#fff" stroke="#393a3d"/>
+      </g>
+      <g transform="translate(116 8)">
+        <rect width="94" height="154" rx="6" fill="#fff" stroke="#0a1628" stroke-width="1.6"/>
+        <rect x="6" y="-8" width="40" height="16" rx="8" fill="#0a1628"/>
+        <text x="26" y="3" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="8" font-weight="600" fill="#fff">CURRENT</text>
+        <text x="10" y="24" font-family="Inter Tight, sans-serif" font-size="10" font-weight="600" fill="#393a3d">Plus</text>
+        <text x="10" y="46" font-family="Inter Tight, sans-serif" font-size="18" font-weight="700" fill="#393a3d">$10</text>
+        <line x1="10" y1="58" x2="84" y2="58" stroke="#d4d7dc"/>
+        <circle cx="14" cy="72" r="2" fill="#2ca01c"/><rect x="22" y="70" width="50" height="3" rx="1.5" fill="#babec5"/>
+        <circle cx="14" cy="84" r="2" fill="#2ca01c"/><rect x="22" y="82" width="62" height="3" rx="1.5" fill="#babec5"/>
+        <circle cx="14" cy="96" r="2" fill="#2ca01c"/><rect x="22" y="94" width="44" height="3" rx="1.5" fill="#babec5"/>
+        <rect x="10" y="124" width="74" height="14" rx="3" fill="#0a1628"/>
+      </g>
+      <g transform="translate(220 14)">
+        <rect width="92" height="142" rx="6" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="20" font-family="Inter Tight, sans-serif" font-size="10" font-weight="600" fill="#393a3d">Business</text>
+        <text x="10" y="42" font-family="Inter Tight, sans-serif" font-size="18" font-weight="700" fill="#393a3d">$18</text>
+        <line x1="10" y1="54" x2="82" y2="54" stroke="#d4d7dc"/>
+        <circle cx="14" cy="68" r="2" fill="#2ca01c"/><rect x="22" y="66" width="56" height="3" rx="1.5" fill="#babec5"/>
+        <circle cx="14" cy="80" r="2" fill="#2ca01c"/><rect x="22" y="78" width="40" height="3" rx="1.5" fill="#babec5"/>
+        <circle cx="14" cy="92" r="2" fill="#2ca01c"/><rect x="22" y="90" width="64" height="3" rx="1.5" fill="#babec5"/>
+        <rect x="10" y="116" width="72" height="14" rx="3" fill="#fff" stroke="#393a3d"/>
+      </g>
+    </g>
+
+    <!-- takeaways -->
+    <text x="24" y="346" font-family="Inter Tight, sans-serif" font-size="10" font-weight="600" letter-spacing=".12em" fill="#6b6c72">TAKEAWAY</text>
+    <text x="24" y="368" font-family="Inter Tight, sans-serif" font-size="13" font-weight="600" fill="#0a1628">Side-by-side feature parity</text>
+    <text x="24" y="386" font-family="Inter Tight, sans-serif" font-size="12" fill="#414550">on plan-change. Clear &amp; quiet.</text>
+    <text x="24" y="408" font-family="Inter Tight, sans-serif" font-size="11" fill="#6b6c72">Adopted: comparison-table primitive.</text>
+  </g>
+
+  <!-- Card 2: Slack -->
+  <g transform="translate(414 60)">
+    <rect width="370" height="430" rx="14" fill="#fff" stroke="#d4d7dc"/>
+    <rect x="0" y="0" width="370" height="68" rx="14" fill="#4a154b"/>
+    <rect x="0" y="54" width="370" height="14" fill="#4a154b"/>
+    <text x="24" y="42" font-family="Fraunces, serif" font-size="22" font-weight="600" fill="#fff">Slack</text>
+    <text x="24" y="58" font-family="Inter Tight, sans-serif" font-size="11" fill="#d8b9d9">workspace · active-seat billing</text>
+
+    <text x="24" y="100" font-family="Inter Tight, sans-serif" font-size="10" font-weight="600" letter-spacing=".12em" fill="#6b6c72">FOCUS</text>
+    <g transform="translate(24 110)">
+      <rect width="98" height="22" rx="11" fill="#f4f5f8"/>
+      <text x="49" y="15" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="500" fill="#393a3d">Downgrade flow</text>
+      <rect x="106" width="100" height="22" rx="11" fill="#f4f5f8"/>
+      <text x="156" y="15" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="500" fill="#393a3d">Prorated charges</text>
+      <rect x="214" width="68" height="22" rx="11" fill="#f4f5f8"/>
+      <text x="248" y="15" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="500" fill="#393a3d">Past-due</text>
+    </g>
+
+    <!-- abstract mockup: downgrade comparison -->
+    <g transform="translate(24 152)">
+      <rect width="322" height="170" rx="6" fill="#f7f7f7" stroke="#e6e6e6"/>
+      <text x="14" y="22" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" fill="#393a3d">Here's what's going away</text>
+      <!-- two-column comparison -->
+      <g transform="translate(14 32)">
+        <text x="0" y="14" font-family="Inter Tight, sans-serif" font-size="9" font-weight="600" fill="#6b6c72">Pro · current</text>
+        <text x="158" y="14" font-family="Inter Tight, sans-serif" font-size="9" font-weight="600" fill="#b3262d">Free · after Aug 1</text>
+
+        <rect x="0" y="22" width="146" height="22" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <circle cx="12" cy="33" r="3" fill="#0c6e4f"/>
+        <rect x="22" y="30" width="80" height="6" rx="2" fill="#393a3d"/>
+        <rect x="158" y="22" width="146" height="22" rx="3" fill="#fbd6d6"/>
+        <text x="170" y="38" font-family="Inter Tight, sans-serif" font-size="13" font-weight="700" fill="#b3262d">✕</text>
+        <rect x="182" y="30" width="80" height="6" rx="2" fill="#9aa1b3"/>
+
+        <rect x="0" y="50" width="146" height="22" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <circle cx="12" cy="61" r="3" fill="#0c6e4f"/>
+        <rect x="22" y="58" width="70" height="6" rx="2" fill="#393a3d"/>
+        <rect x="158" y="50" width="146" height="22" rx="3" fill="#fbd6d6"/>
+        <text x="170" y="66" font-family="Inter Tight, sans-serif" font-size="13" font-weight="700" fill="#b3262d">✕</text>
+        <rect x="182" y="58" width="64" height="6" rx="2" fill="#9aa1b3"/>
+
+        <rect x="0" y="78" width="146" height="22" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <circle cx="12" cy="89" r="3" fill="#0c6e4f"/>
+        <rect x="22" y="86" width="84" height="6" rx="2" fill="#393a3d"/>
+        <rect x="158" y="78" width="146" height="22" rx="3" fill="#fbd6d6"/>
+        <text x="170" y="94" font-family="Inter Tight, sans-serif" font-size="13" font-weight="700" fill="#b3262d">✕</text>
+        <rect x="182" y="86" width="76" height="6" rx="2" fill="#9aa1b3"/>
+      </g>
+      <text x="14" y="160" font-family="Inter Tight, sans-serif" font-size="9" fill="#6b6c72">See 9 more features →</text>
+    </g>
+
+    <text x="24" y="346" font-family="Inter Tight, sans-serif" font-size="10" font-weight="600" letter-spacing=".12em" fill="#6b6c72">TAKEAWAY</text>
+    <text x="24" y="368" font-family="Inter Tight, sans-serif" font-size="13" font-weight="600" fill="#0a1628">Loss-aversion language paired</text>
+    <text x="24" y="386" font-family="Inter Tight, sans-serif" font-size="12" fill="#414550">with concrete dates and impacts.</text>
+    <text x="24" y="408" font-family="Inter Tight, sans-serif" font-size="11" fill="#6b6c72">Adopted: lifecycle-aware messaging.</text>
+  </g>
+
+  <!-- Card 3: Netflix -->
+  <g transform="translate(804 60)">
+    <rect width="370" height="430" rx="14" fill="#fff" stroke="#d4d7dc"/>
+    <rect x="0" y="0" width="370" height="68" rx="14" fill="#141414"/>
+    <rect x="0" y="54" width="370" height="14" fill="#141414"/>
+    <text x="24" y="42" font-family="Fraunces, serif" font-size="22" font-weight="600" fill="#fff">Netflix</text>
+    <text x="24" y="58" font-family="Inter Tight, sans-serif" font-size="11" fill="#e07b7e">consumer · tiered subscription</text>
+
+    <text x="24" y="100" font-family="Inter Tight, sans-serif" font-size="10" font-weight="600" letter-spacing=".12em" fill="#6b6c72">FOCUS</text>
+    <g transform="translate(24 110)">
+      <rect width="100" height="22" rx="11" fill="#f4f5f8"/>
+      <text x="50" y="15" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="500" fill="#393a3d">Pause / cancel</text>
+      <rect x="108" width="118" height="22" rx="11" fill="#f4f5f8"/>
+      <text x="167" y="15" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="500" fill="#393a3d">Failed-payment recovery</text>
+      <rect x="234" width="74" height="22" rx="11" fill="#f4f5f8"/>
+      <text x="271" y="15" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="500" fill="#393a3d">Resume</text>
+    </g>
+
+    <!-- failed payment recovery banner -->
+    <g transform="translate(24 152)">
+      <rect width="322" height="170" rx="6" fill="#f7f7f7" stroke="#e6e6e6"/>
+      <!-- banner -->
+      <rect x="14" y="14" width="294" height="56" rx="6" fill="#fad7d6"/>
+      <circle cx="34" cy="42" r="10" fill="#d71e28"/>
+      <text x="34" y="46" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="12" font-weight="700" fill="#fff">!</text>
+      <text x="56" y="36" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" fill="#7a1a1f">Your last payment didn't go through</text>
+      <text x="56" y="50" font-family="Inter Tight, sans-serif" font-size="10" fill="#7a1a1f">We'll retry in 3 days — update your card to avoid a pause.</text>
+      <rect x="56" y="56" width="84" height="11" rx="2" fill="#7a1a1f"/>
+      <text x="98" y="64" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="8" font-weight="600" fill="#fff">UPDATE CARD</text>
+      <!-- watch state still visible -->
+      <text x="14" y="92" font-family="Inter Tight, sans-serif" font-size="10" font-weight="600" fill="#393a3d">Your subscription · still active</text>
+      <rect x="14" y="100" width="60" height="46" rx="3" fill="#0a1628"/>
+      <rect x="78" y="100" width="60" height="46" rx="3" fill="#0a1628"/>
+      <rect x="142" y="100" width="60" height="46" rx="3" fill="#0a1628"/>
+      <rect x="206" y="100" width="60" height="46" rx="3" fill="#0a1628"/>
+      <text x="14" y="160" font-family="Inter Tight, sans-serif" font-size="9" fill="#6b6c72">Next charge: Aug 12, $15.49</text>
+    </g>
+
+    <text x="24" y="346" font-family="Inter Tight, sans-serif" font-size="10" font-weight="600" letter-spacing=".12em" fill="#6b6c72">TAKEAWAY</text>
+    <text x="24" y="368" font-family="Inter Tight, sans-serif" font-size="13" font-weight="600" fill="#0a1628">Status banners surface payment</text>
+    <text x="24" y="386" font-family="Inter Tight, sans-serif" font-size="12" fill="#414550">issues without blocking access.</text>
+    <text x="24" y="408" font-family="Inter Tight, sans-serif" font-size="11" fill="#6b6c72">Adopted: status-banner primitive.</text>
+  </g>
+</svg>

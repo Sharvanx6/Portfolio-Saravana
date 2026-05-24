@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c4e3a"/>
+      <stop offset=".55" stop-color="#137250"/>
+      <stop offset="1" stop-color="#2ca01c"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="card-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="4"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".35"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#glow)"/>
+
+  <!-- ambient particles -->
+  <g opacity=".22" fill="#fff">
+    <circle cx="120" cy="80" r="2"/>
+    <circle cx="700" cy="60" r="1.6"/>
+    <circle cx="660" cy="430" r="2.4"/>
+    <circle cx="180" cy="420" r="1.4"/>
+    <circle cx="60" cy="250" r="1.8"/>
+    <circle cx="740" cy="280" r="1.2"/>
+  </g>
+
+  <!-- a subtle prompt-like floating label top-right -->
+  <g transform="translate(540 60)" opacity=".88">
+    <rect x="0" y="0" width="200" height="34" rx="17" fill="rgba(255,255,255,.14)" stroke="rgba(255,255,255,.35)" stroke-width="1"/>
+    <circle cx="18" cy="17" r="5" fill="#9ee8b9"/>
+    <text x="32" y="22" fill="#fff" font-family="Inter Tight, sans-serif" font-size="13" font-weight="500">ai · pattern library</text>
+  </g>
+
+  <!-- main subscription card (centered, slightly skewed for depth) -->
+  <g transform="translate(240 138)" filter="url(#card-shadow)">
+    <!-- back card -->
+    <g transform="translate(28 22) rotate(-3 160 100)" opacity=".5">
+      <rect width="320" height="190" rx="14" fill="#0a3528"/>
+      <rect x="0" y="0" width="320" height="8" rx="4" fill="#9ee8b9"/>
+    </g>
+    <!-- mid card -->
+    <g transform="translate(14 11) rotate(-1.5 160 100)" opacity=".75">
+      <rect width="320" height="200" rx="14" fill="#0f4537"/>
+      <rect x="0" y="0" width="320" height="8" rx="4" fill="#56c178"/>
+    </g>
+    <!-- front card -->
+    <g>
+      <rect width="320" height="210" rx="14" fill="#ffffff"/>
+      <rect x="0" y="0" width="320" height="8" rx="4" fill="#2ca01c"/>
+      <!-- product name -->
+      <text x="20" y="40" fill="#393a3d" font-family="Inter Tight, sans-serif" font-size="15" font-weight="600">FlowBooks Plus</text>
+      <!-- status pill -->
+      <g transform="translate(20 50)">
+        <rect width="80" height="18" rx="9" fill="#dcf2dd"/>
+        <text x="40" y="13" text-anchor="middle" fill="#108000" font-family="Inter Tight, sans-serif" font-size="9" font-weight="600" letter-spacing=".06em">SUBSCRIBED</text>
+      </g>
+      <!-- price -->
+      <text x="20" y="105" fill="#393a3d" font-family="Inter Tight, sans-serif" font-size="32" font-weight="700">$75</text>
+      <text x="78" y="105" fill="#6b6c72" font-family="Inter Tight, sans-serif" font-size="13" font-weight="500">/mo</text>
+      <text x="20" y="122" fill="#6b6c72" font-family="Inter Tight, sans-serif" font-size="10">+ applicable taxes</text>
+      <!-- divider -->
+      <line x1="20" y1="142" x2="300" y2="142" stroke="#d4d7dc" stroke-width="1"/>
+      <!-- meta rows -->
+      <text x="20" y="162" fill="#6b6c72" font-family="Inter Tight, sans-serif" font-size="10">Next charge</text>
+      <text x="300" y="162" text-anchor="end" fill="#393a3d" font-family="Inter Tight, sans-serif" font-size="10" font-weight="600">Jun 12, 2026</text>
+      <text x="20" y="182" fill="#6b6c72" font-family="Inter Tight, sans-serif" font-size="10">Payment</text>
+      <text x="300" y="182" text-anchor="end" fill="#393a3d" font-family="Inter Tight, sans-serif" font-size="10" font-weight="600">Visa •••• 4242</text>
+    </g>
+  </g>
+
+  <!-- floating "Switch to annual" hint pill bottom-right -->
+  <g transform="translate(490 360)">
+    <rect width="218" height="32" rx="16" fill="#ffffff" opacity=".95"/>
+    <text x="16" y="20" fill="#2ca01c" font-family="Inter Tight, sans-serif" font-size="12" font-weight="600">Switch to annual</text>
+    <text x="138" y="20" fill="#6b6c72" font-family="Inter Tight, sans-serif" font-size="11">· save 18%</text>
+  </g>
+</svg>

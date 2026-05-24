@@ -1,0 +1,468 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1640" font-family="Inter Tight, sans-serif">
+  <!-- legend -->
+  <text x="24" y="34" font-size="11" font-weight="600" letter-spacing=".14em" fill="#6b6c72">BUILDING A FLOWBOOKS UPGRADE FLOW · A 4-STEP WALKTHROUGH</text>
+
+  <!-- ============== STEP 1: PICK A SCENARIO ============== -->
+  <g transform="translate(0 70)">
+    <!-- step header -->
+    <g transform="translate(24 0)">
+      <circle cx="20" cy="20" r="20" fill="#0a1628"/>
+      <text x="20" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">1</text>
+      <text x="54" y="18" font-size="11" font-weight="600" letter-spacing=".12em" fill="#6b6c72">STEP ONE</text>
+      <text x="54" y="36" font-size="20" font-weight="600" font-family="Fraunces, serif" fill="#0a1628">Pick a scenario, set the lifecycle state</text>
+    </g>
+
+    <!-- annotation on left -->
+    <g transform="translate(24 70)">
+      <rect width="380" height="240" rx="8" fill="#fafbfc" stroke="#d4d7dc"/>
+      <text x="20" y="32" font-size="13" font-weight="600" fill="#0a1628">What I'm doing</text>
+      <text x="20" y="56" font-size="12" fill="#414550">From the pattern library on the left,</text>
+      <text x="20" y="74" font-size="12" fill="#414550">I pick <tspan font-weight="600" fill="#0a1628">Upgrade · single SKU</tspan>. The</text>
+      <text x="20" y="92" font-size="12" fill="#414550">builder loads a default 4-step flow.</text>
+
+      <text x="20" y="120" font-size="13" font-weight="600" fill="#0a1628">Then I scope it</text>
+      <text x="20" y="144" font-size="12" fill="#414550">I select the entry lifecycle state for</text>
+      <text x="20" y="162" font-size="12" fill="#414550">this version of the flow — here,</text>
+      <text x="20" y="180" font-size="12" font-weight="600" fill="#2ca01c">Active</text>
+      <text x="44" y="180" font-size="12" fill="#414550">. (I'd pick </text>
+      <text x="92" y="180" font-size="12" font-weight="600" fill="#b3262d">Past-due</text>
+      <text x="138" y="180" font-size="12" fill="#414550">to get a</text>
+      <text x="20" y="198" font-size="12" fill="#414550">different default branching tree.)</text>
+
+      <rect x="20" y="216" width="340" height="14" rx="3" fill="#e8f0fa"/>
+      <text x="30" y="226" font-size="10" font-weight="600" fill="#0077c5">→ outcome: flow scaffold loaded in canvas</text>
+    </g>
+
+    <!-- builder mockup on right -->
+    <g transform="translate(424 70)">
+      <!-- window chrome -->
+      <rect width="832" height="380" rx="10" fill="#fff" stroke="#d4d7dc"/>
+      <rect width="832" height="32" rx="10" fill="#f4f5f8"/>
+      <rect y="22" width="832" height="10" fill="#f4f5f8"/>
+      <circle cx="18" cy="16" r="4" fill="#fc625d"/>
+      <circle cx="32" cy="16" r="4" fill="#fdbc40"/>
+      <circle cx="46" cy="16" r="4" fill="#34c749"/>
+      <text x="416" y="20" text-anchor="middle" font-size="11" font-weight="600" fill="#393a3d">B&amp;S Pattern Builder</text>
+
+      <!-- left sidebar -->
+      <rect y="32" width="200" height="348" fill="#fafbfc"/>
+      <line x1="200" y1="32" x2="200" y2="380" stroke="#d4d7dc"/>
+      <text x="16" y="56" font-size="9" font-weight="700" letter-spacing=".12em" fill="#6b6c72">LIFECYCLE PATTERNS</text>
+
+      <!-- pattern items, with the picked one highlighted -->
+      <g transform="translate(8 70)" font-size="11" fill="#393a3d">
+        <rect width="184" height="28" rx="4" fill="#e6f2eb" stroke="#2ca01c" stroke-width="1.4"/>
+        <text x="12" y="18" font-weight="600">Upgrade · single SKU</text>
+        <circle cx="170" cy="14" r="6" fill="#2ca01c"/>
+        <path d="M 167 14 L 169 16 L 173 12" stroke="#fff" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <g transform="translate(0 32)"><text x="12" y="18">Upgrade · multi SKU</text></g>
+        <g transform="translate(0 60)"><text x="12" y="18">Downgrade review</text></g>
+        <g transform="translate(0 88)"><text x="12" y="18">Cancellation flow</text></g>
+        <g transform="translate(0 116)"><text x="12" y="18">Failed-payment recovery</text></g>
+        <g transform="translate(0 144)"><text x="12" y="18">Trial conversion</text></g>
+        <g transform="translate(0 172)"><text x="12" y="18">Plan comparison</text></g>
+
+        <text y="218" font-size="9" font-weight="700" letter-spacing=".12em" fill="#6b6c72">PRIMITIVES</text>
+        <g transform="translate(0 232)"><text x="12" y="14">Pricing card</text></g>
+        <g transform="translate(0 250)"><text x="12" y="14">Status banner</text></g>
+        <g transform="translate(0 268)"><text x="12" y="14">Comparison block</text></g>
+      </g>
+
+      <!-- main canvas -->
+      <g transform="translate(220 50)">
+        <text font-size="10" font-weight="600" letter-spacing=".1em" fill="#6b6c72">SCENARIO</text>
+        <text y="22" font-size="20" font-weight="600" font-family="Fraunces, serif" fill="#0a1628">Upgrade · single SKU</text>
+
+        <!-- state-tab strip with Active highlighted -->
+        <g transform="translate(0 44)">
+          <rect width="560" height="34" rx="6" fill="#f4f5f8"/>
+          <rect x="4" y="4" width="80" height="26" rx="4" fill="#fff" stroke="#2ca01c" stroke-width="1.4"/>
+          <circle cx="20" cy="17" r="4" fill="#2ca01c"/>
+          <text x="44" y="21" font-size="11" font-weight="600" fill="#0a1628">Active</text>
+          <g font-size="11" fill="#6b6c72">
+            <text x="100" y="21">Trial</text>
+            <text x="148" y="21">Past-due</text>
+            <text x="224" y="21">Paused</text>
+            <text x="288" y="21">Cancel pending</text>
+            <text x="396" y="21">Resubscribe</text>
+          </g>
+        </g>
+
+        <!-- big arrow + selection callout -->
+        <g transform="translate(580 14)">
+          <path d="M 0 60 C -40 60 -40 30 -10 30" stroke="#7c5cd6" stroke-width="2" fill="none" stroke-dasharray="4 4"/>
+          <rect x="-12" y="0" width="14" height="20" fill="#7c5cd6"/>
+          <text x="0" y="14" font-size="10" font-weight="600" fill="#fff" transform="rotate(0)">a</text>
+        </g>
+
+        <!-- scaffold of 4 step cards (placeholder, dimmed) -->
+        <g transform="translate(0 100)">
+          <rect width="130" height="180" rx="6" fill="#fff" stroke="#d4d7dc" stroke-dasharray="3 3"/>
+          <text x="12" y="22" font-size="9" font-weight="600" letter-spacing=".1em" fill="#9aa1b3">STEP 1</text>
+          <text x="12" y="38" font-size="10" fill="#9aa1b3">Entry</text>
+          <rect x="12" y="50" width="106" height="80" rx="3" fill="#f4f5f8"/>
+          <text x="12" y="148" font-size="10" fill="#6b6c72">add primitive</text>
+          <text x="12" y="160" font-size="10" fill="#0077c5">+</text>
+
+          <g transform="translate(146 0)">
+            <rect width="130" height="180" rx="6" fill="#fff" stroke="#d4d7dc" stroke-dasharray="3 3"/>
+            <text x="12" y="22" font-size="9" font-weight="600" letter-spacing=".1em" fill="#9aa1b3">STEP 2</text>
+            <text x="12" y="38" font-size="10" fill="#9aa1b3">Compare</text>
+            <rect x="12" y="50" width="106" height="80" rx="3" fill="#f4f5f8"/>
+            <text x="12" y="148" font-size="10" fill="#6b6c72">add primitive</text>
+            <text x="12" y="160" font-size="10" fill="#0077c5">+</text>
+          </g>
+          <g transform="translate(292 0)">
+            <rect width="130" height="180" rx="6" fill="#fff" stroke="#d4d7dc" stroke-dasharray="3 3"/>
+            <text x="12" y="22" font-size="9" font-weight="600" letter-spacing=".1em" fill="#9aa1b3">STEP 3</text>
+            <text x="12" y="38" font-size="10" fill="#9aa1b3">Review</text>
+            <rect x="12" y="50" width="106" height="80" rx="3" fill="#f4f5f8"/>
+            <text x="12" y="148" font-size="10" fill="#6b6c72">add primitive</text>
+            <text x="12" y="160" font-size="10" fill="#0077c5">+</text>
+          </g>
+          <g transform="translate(438 0)">
+            <rect width="130" height="180" rx="6" fill="#fff" stroke="#d4d7dc" stroke-dasharray="3 3"/>
+            <text x="12" y="22" font-size="9" font-weight="600" letter-spacing=".1em" fill="#9aa1b3">STEP 4</text>
+            <text x="12" y="38" font-size="10" fill="#9aa1b3">Confirm</text>
+            <rect x="12" y="50" width="106" height="80" rx="3" fill="#f4f5f8"/>
+            <text x="12" y="148" font-size="10" fill="#6b6c72">add primitive</text>
+            <text x="12" y="160" font-size="10" fill="#0077c5">+</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============== STEP 2: PICK PRIMITIVES ============== -->
+  <g transform="translate(0 510)">
+    <g transform="translate(24 0)">
+      <circle cx="20" cy="20" r="20" fill="#0a1628"/>
+      <text x="20" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">2</text>
+      <text x="54" y="18" font-size="11" font-weight="600" letter-spacing=".12em" fill="#6b6c72">STEP TWO</text>
+      <text x="54" y="36" font-size="20" font-weight="600" font-family="Fraunces, serif" fill="#0a1628">Compose the flow from primitives</text>
+    </g>
+
+    <g transform="translate(24 70)">
+      <rect width="380" height="240" rx="8" fill="#fafbfc" stroke="#d4d7dc"/>
+      <text x="20" y="32" font-size="13" font-weight="600" fill="#0a1628">Drag &amp; drop, or auto-fill</text>
+      <text x="20" y="56" font-size="12" fill="#414550">Each step accepts one or more</text>
+      <text x="20" y="74" font-size="12" fill="#414550">primitives. I drag <tspan font-weight="600" fill="#0a1628">Subscription card</tspan></text>
+      <text x="20" y="92" font-size="12" fill="#414550">into Step 1, <tspan font-weight="600" fill="#0a1628">Comparison block</tspan> into</text>
+      <text x="20" y="110" font-size="12" fill="#414550">Step 2, <tspan font-weight="600" fill="#0a1628">Review trowser</tspan> into 3, and</text>
+      <text x="20" y="128" font-size="12" fill="#414550"><tspan font-weight="600" fill="#0a1628">Confirmation modal</tspan> into 4.</text>
+
+      <text x="20" y="160" font-size="13" font-weight="600" fill="#0a1628">Every primitive is IDS-tokenised</text>
+      <text x="20" y="184" font-size="12" fill="#414550">No re-styling needed. Spacing, colour,</text>
+      <text x="20" y="202" font-size="12" fill="#414550">type, and a11y states already match.</text>
+
+      <rect x="20" y="216" width="340" height="14" rx="3" fill="#e8f0fa"/>
+      <text x="30" y="226" font-size="10" font-weight="600" fill="#0077c5">→ outcome: 4 canvas steps filled with real components</text>
+    </g>
+
+    <g transform="translate(424 70)">
+      <rect width="832" height="380" rx="10" fill="#fff" stroke="#d4d7dc"/>
+      <rect width="832" height="32" rx="10" fill="#f4f5f8"/>
+      <rect y="22" width="832" height="10" fill="#f4f5f8"/>
+      <circle cx="18" cy="16" r="4" fill="#fc625d"/><circle cx="32" cy="16" r="4" fill="#fdbc40"/><circle cx="46" cy="16" r="4" fill="#34c749"/>
+      <text x="416" y="20" text-anchor="middle" font-size="11" font-weight="600" fill="#393a3d">B&amp;S Pattern Builder · Upgrade · single SKU</text>
+
+      <!-- sidebar collapsed showing primitives -->
+      <rect y="32" width="200" height="348" fill="#fafbfc"/>
+      <line x1="200" y1="32" x2="200" y2="380" stroke="#d4d7dc"/>
+      <text x="16" y="56" font-size="9" font-weight="700" letter-spacing=".12em" fill="#6b6c72">PRIMITIVES</text>
+
+      <g transform="translate(8 70)">
+        <rect width="184" height="32" rx="4" fill="#fff" stroke="#d4d7dc"/>
+        <rect x="6" y="6" width="20" height="20" rx="3" fill="#e6f2eb"/>
+        <rect x="9" y="10" width="14" height="3" rx="1" fill="#2ca01c"/>
+        <text x="34" y="22" font-size="11" font-weight="600" fill="#393a3d">Subscription card</text>
+
+        <g transform="translate(0 40)">
+          <rect width="184" height="32" rx="4" fill="#fff" stroke="#d4d7dc"/>
+          <g transform="translate(6 6)">
+            <rect width="6" height="20" rx="1.5" fill="#0a1628"/>
+            <rect x="8" width="6" height="20" rx="1.5" fill="#2ca01c"/>
+            <rect x="16" width="6" height="20" rx="1.5" fill="#0a1628"/>
+          </g>
+          <text x="34" y="22" font-size="11" font-weight="600" fill="#393a3d">Comparison block</text>
+        </g>
+        <g transform="translate(0 80)">
+          <rect width="184" height="32" rx="4" fill="#fff" stroke="#d4d7dc"/>
+          <rect x="6" y="6" width="20" height="20" rx="3" fill="#fff" stroke="#0a1628"/>
+          <text x="34" y="22" font-size="11" font-weight="600" fill="#393a3d">Review trowser</text>
+        </g>
+        <g transform="translate(0 120)">
+          <rect width="184" height="32" rx="4" fill="#fff" stroke="#d4d7dc"/>
+          <circle cx="16" cy="16" r="9" fill="#dcf2dd"/>
+          <path d="M 12 16 L 15 19 L 21 12" stroke="#108000" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="34" y="22" font-size="11" font-weight="600" fill="#393a3d">Confirmation modal</text>
+        </g>
+        <g transform="translate(0 160)">
+          <rect width="184" height="32" rx="4" fill="#fff" stroke="#d4d7dc"/>
+          <rect x="6" y="10" width="20" height="12" rx="2" fill="#fad7d6"/>
+          <circle cx="11" cy="16" r="3" fill="#d71e28"/>
+          <text x="34" y="22" font-size="11" font-weight="600" fill="#393a3d">Status banner</text>
+        </g>
+        <g transform="translate(0 200)">
+          <rect width="184" height="32" rx="4" fill="#fff" stroke="#d4d7dc"/>
+          <rect x="6" y="6" width="20" height="20" rx="3" fill="#fff" stroke="#946e3a"/>
+          <text x="34" y="22" font-size="11" font-weight="600" fill="#393a3d">Retention card</text>
+        </g>
+      </g>
+
+      <!-- canvas with filled steps -->
+      <g transform="translate(220 50)">
+        <text font-size="11" fill="#6b6c72">Library · Upgrade · single SKU · </text>
+        <text x="186" font-size="11" font-weight="600" fill="#393a3d">Active state</text>
+
+        <g transform="translate(0 30)">
+          <!-- step 1: subscription card -->
+          <rect width="130" height="210" rx="6" fill="#fff" stroke="#2ca01c" stroke-width="1.4"/>
+          <text x="12" y="22" font-size="9" font-weight="600" letter-spacing=".1em" fill="#6b6c72">STEP 1 · ENTRY</text>
+          <g transform="translate(12 30)">
+            <rect width="106" height="110" rx="4" fill="#f7f7f7"/>
+            <rect x="6" y="6" width="94" height="3" rx="1.5" fill="#2ca01c"/>
+            <rect x="6" y="16" width="40" height="4" rx="2" fill="#393a3d"/>
+            <rect x="6" y="26" width="28" height="6" rx="2" fill="#393a3d"/>
+            <rect x="6" y="36" width="60" height="3" rx="1.5" fill="#babec5"/>
+            <line x1="6" y1="46" x2="100" y2="46" stroke="#d4d7dc" stroke-width=".6"/>
+            <rect x="6" y="54" width="40" height="3" rx="1.5" fill="#babec5"/>
+            <rect x="6" y="64" width="60" height="3" rx="1.5" fill="#babec5"/>
+            <rect x="6" y="90" width="50" height="14" rx="3" fill="#2ca01c"/>
+            <rect x="60" y="90" width="40" height="14" rx="3" fill="#fff" stroke="#2ca01c"/>
+          </g>
+          <text x="12" y="160" font-size="10" font-weight="600" fill="#0a1628">Subscription card</text>
+          <text x="12" y="174" font-size="10" fill="#6b6c72">"Switch plan" CTA</text>
+          <rect x="12" y="184" width="50" height="16" rx="8" fill="#e8f0fa"/>
+          <text x="37" y="195" text-anchor="middle" font-size="9" font-weight="600" fill="#0077c5">primitive</text>
+        </g>
+
+        <!-- arrow between steps -->
+        <g transform="translate(132 130)" stroke="#0a1628" stroke-width="1.4" fill="none" stroke-linecap="round">
+          <line x1="0" y1="10" x2="22" y2="10"/>
+          <path d="M 16 5 L 22 10 L 16 15" stroke-linejoin="round"/>
+        </g>
+
+        <!-- step 2 -->
+        <g transform="translate(160 30)">
+          <rect width="160" height="210" rx="6" fill="#fff" stroke="#2ca01c" stroke-width="1.4"/>
+          <text x="12" y="22" font-size="9" font-weight="600" letter-spacing=".1em" fill="#6b6c72">STEP 2 · COMPARE</text>
+          <g transform="translate(12 30)">
+            <rect width="136" height="110" rx="4" fill="#f7f7f7"/>
+            <!-- 3 plan cells -->
+            <rect x="4" y="8" width="40" height="94" rx="3" fill="#fff" stroke="#d4d7dc"/>
+            <rect x="4" y="8" width="40" height="4" rx="2" fill="#babec5"/>
+            <rect x="10" y="20" width="20" height="3" rx="1.5" fill="#393a3d"/>
+            <rect x="10" y="28" width="16" height="6" rx="2" fill="#393a3d"/>
+
+            <rect x="48" y="6" width="40" height="98" rx="3" fill="#fff" stroke="#2ca01c" stroke-width="1.2"/>
+            <rect x="48" y="6" width="40" height="4" rx="2" fill="#2ca01c"/>
+            <rect x="54" y="18" width="20" height="3" rx="1.5" fill="#393a3d"/>
+            <rect x="54" y="26" width="16" height="6" rx="2" fill="#2ca01c"/>
+            <rect x="54" y="88" width="28" height="8" rx="2" fill="#2ca01c"/>
+
+            <rect x="92" y="8" width="40" height="94" rx="3" fill="#fff" stroke="#d4d7dc"/>
+            <rect x="92" y="8" width="40" height="4" rx="2" fill="#babec5"/>
+            <rect x="98" y="20" width="20" height="3" rx="1.5" fill="#393a3d"/>
+            <rect x="98" y="28" width="16" height="6" rx="2" fill="#393a3d"/>
+          </g>
+          <text x="12" y="160" font-size="10" font-weight="600" fill="#0a1628">Comparison block</text>
+          <text x="12" y="174" font-size="10" fill="#6b6c72">3-col + current highlight</text>
+          <rect x="12" y="184" width="50" height="16" rx="8" fill="#e8f0fa"/>
+          <text x="37" y="195" text-anchor="middle" font-size="9" font-weight="600" fill="#0077c5">primitive</text>
+          <rect x="68" y="184" width="56" height="16" rx="8" fill="#fff" stroke="#0077c5"/>
+          <text x="96" y="195" text-anchor="middle" font-size="9" font-weight="600" fill="#0077c5">edit copy</text>
+        </g>
+
+        <g transform="translate(322 130)" stroke="#0a1628" stroke-width="1.4" fill="none" stroke-linecap="round">
+          <line x1="0" y1="10" x2="22" y2="10"/>
+          <path d="M 16 5 L 22 10 L 16 15" stroke-linejoin="round"/>
+        </g>
+
+        <!-- step 3 -->
+        <g transform="translate(350 30)">
+          <rect width="140" height="210" rx="6" fill="#fff" stroke="#2ca01c" stroke-width="1.4"/>
+          <text x="12" y="22" font-size="9" font-weight="600" letter-spacing=".1em" fill="#6b6c72">STEP 3 · REVIEW</text>
+          <g transform="translate(12 30)">
+            <rect width="116" height="110" rx="4" fill="#f7f7f7"/>
+            <rect x="6" y="6" width="64" height="4" rx="2" fill="#393a3d"/>
+            <rect x="6" y="18" width="50" height="46" rx="3" fill="#fff" stroke="#d4d7dc"/>
+            <rect x="60" y="18" width="50" height="46" rx="3" fill="#fff" stroke="#2ca01c" stroke-width="1.2"/>
+            <rect x="6" y="72" width="100" height="4" rx="2" fill="#babec5"/>
+            <rect x="6" y="82" width="80" height="3" rx="1.5" fill="#babec5"/>
+            <rect x="6" y="92" width="34" height="10" rx="2" fill="#2ca01c"/>
+          </g>
+          <text x="12" y="160" font-size="10" font-weight="600" fill="#0a1628">Review trowser</text>
+          <text x="12" y="174" font-size="10" fill="#6b6c72">summary + legal terms</text>
+          <rect x="12" y="184" width="50" height="16" rx="8" fill="#e8f0fa"/>
+          <text x="37" y="195" text-anchor="middle" font-size="9" font-weight="600" fill="#0077c5">primitive</text>
+        </g>
+
+        <g transform="translate(492 130)" stroke="#0a1628" stroke-width="1.4" fill="none" stroke-linecap="round">
+          <line x1="0" y1="10" x2="22" y2="10"/>
+          <path d="M 16 5 L 22 10 L 16 15" stroke-linejoin="round"/>
+        </g>
+
+        <!-- step 4 -->
+        <g transform="translate(520 30)">
+          <rect width="130" height="210" rx="6" fill="#fff" stroke="#2ca01c" stroke-width="1.4"/>
+          <text x="12" y="22" font-size="9" font-weight="600" letter-spacing=".1em" fill="#6b6c72">STEP 4 · CONFIRM</text>
+          <g transform="translate(12 30)">
+            <rect width="106" height="110" rx="4" fill="#f7f7f7"/>
+            <circle cx="53" cy="32" r="12" fill="#2ca01c"/>
+            <path d="M 48 32 L 52 36 L 58 28" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="22" y="52" width="62" height="5" rx="2" fill="#393a3d"/>
+            <rect x="30" y="62" width="46" height="4" rx="2" fill="#babec5"/>
+            <rect x="6" y="78" width="94" height="3" rx="1.5" fill="#babec5"/>
+            <rect x="6" y="86" width="80" height="3" rx="1.5" fill="#babec5"/>
+            <rect x="32" y="96" width="42" height="10" rx="5" fill="#2ca01c"/>
+          </g>
+          <text x="12" y="160" font-size="10" font-weight="600" fill="#0a1628">Confirmation modal</text>
+          <text x="12" y="174" font-size="10" fill="#6b6c72">next-step bullets</text>
+          <rect x="12" y="184" width="50" height="16" rx="8" fill="#e8f0fa"/>
+          <text x="37" y="195" text-anchor="middle" font-size="9" font-weight="600" fill="#0077c5">primitive</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============== STEP 3: AI EXPLORATION ============== -->
+  <g transform="translate(0 950)">
+    <g transform="translate(24 0)">
+      <circle cx="20" cy="20" r="20" fill="#2ca01c"/>
+      <text x="20" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">3</text>
+      <text x="54" y="18" font-size="11" font-weight="600" letter-spacing=".12em" fill="#6b6c72">STEP THREE · AI</text>
+      <text x="54" y="36" font-size="20" font-weight="600" font-family="Fraunces, serif" fill="#0a1628">Probe edge cases and copy variants</text>
+    </g>
+
+    <g transform="translate(24 70)">
+      <rect width="380" height="240" rx="8" fill="#0c4e3a"/>
+      <text x="20" y="32" font-size="13" font-weight="600" fill="#9ee8b9">Trigger an exploration</text>
+      <text x="20" y="56" font-size="12" fill="#cde7d8">I press <tspan font-weight="600" fill="#fff">↻ AI explore</tspan>. The builder sends</text>
+      <text x="20" y="74" font-size="12" fill="#cde7d8">the current scenario + state to Claude</text>
+      <text x="20" y="92" font-size="12" fill="#cde7d8">and asks for edge-case branches and</text>
+      <text x="20" y="110" font-size="12" fill="#cde7d8">copy variants for each step.</text>
+
+      <text x="20" y="140" font-size="13" font-weight="600" fill="#9ee8b9">12 variants come back</text>
+      <text x="20" y="164" font-size="12" fill="#cde7d8">Surfaced as suggestion chips in the</text>
+      <text x="20" y="182" font-size="12" fill="#cde7d8">bottom panel. Each labels the underlying</text>
+      <text x="20" y="200" font-size="12" fill="#cde7d8">edge case it addresses.</text>
+
+      <rect x="20" y="216" width="340" height="14" rx="3" fill="rgba(158,232,185,.15)"/>
+      <text x="30" y="226" font-size="10" font-weight="600" fill="#9ee8b9">→ outcome: 12 variants ready for curation</text>
+    </g>
+
+    <g transform="translate(424 70)">
+      <rect width="832" height="380" rx="10" fill="#fff" stroke="#d4d7dc"/>
+      <rect width="832" height="32" rx="10" fill="#f4f5f8"/>
+      <rect y="22" width="832" height="10" fill="#f4f5f8"/>
+      <circle cx="18" cy="16" r="4" fill="#fc625d"/><circle cx="32" cy="16" r="4" fill="#fdbc40"/><circle cx="46" cy="16" r="4" fill="#34c749"/>
+      <text x="416" y="20" text-anchor="middle" font-size="11" font-weight="600" fill="#393a3d">B&amp;S Pattern Builder · Upgrade · single SKU</text>
+
+      <!-- canvas dimmed -->
+      <g transform="translate(20 50)" opacity=".25">
+        <rect width="792" height="80" rx="6" fill="#f4f5f8"/>
+      </g>
+
+      <!-- AI panel -->
+      <g transform="translate(20 150)">
+        <rect width="792" height="220" rx="8" fill="#0c4e3a"/>
+        <!-- header -->
+        <g transform="translate(20 22)">
+          <path d="M 8 0 L 9 6 L 16 8 L 9 10 L 8 16 L 7 10 L 0 8 L 7 6 Z" fill="#9ee8b9"/>
+          <text x="24" y="12" font-size="11" font-weight="700" letter-spacing=".12em" fill="#9ee8b9">AI · EDGE-CASE PROBE</text>
+          <text x="220" y="12" font-size="11" fill="#cde7d8">12 variants · accepted 4 · rejected 8 · sequence: 2 of 3</text>
+          <g transform="translate(620 -2)">
+            <rect width="100" height="22" rx="4" fill="rgba(255,255,255,.1)"/>
+            <text x="50" y="15" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">↻ Re-explore</text>
+          </g>
+        </g>
+
+        <!-- 4 variant chips -->
+        <g transform="translate(20 50)" font-size="11">
+          <rect width="180" height="74" rx="6" fill="#fff" stroke="#9ee8b9"/>
+          <text x="14" y="20" font-weight="600" fill="#0a1628">Expired card · prorate</text>
+          <text x="14" y="38" font-size="10" fill="#6b6c72">Step 3 · review</text>
+          <text x="14" y="56" font-size="10" fill="#414550">"Resume from where you left,</text>
+          <text x="14" y="68" font-size="10" fill="#414550">we'll prorate today's date."</text>
+
+          <rect x="196" width="180" height="74" rx="6" fill="#fff" stroke="#9ee8b9"/>
+          <text x="210" y="20" font-weight="600" fill="#0a1628">Enterprise · custom terms</text>
+          <text x="210" y="38" font-size="10" fill="#6b6c72">Step 1 · entry</text>
+          <text x="210" y="56" font-size="10" fill="#414550">Route to AE for net-30 quote</text>
+          <text x="210" y="68" font-size="10" fill="#414550">rather than self-serve upgrade.</text>
+
+          <rect x="392" width="180" height="74" rx="6" fill="#fff" stroke="#9ee8b9"/>
+          <text x="406" y="20" font-weight="600" fill="#0a1628">Paused mid-cycle</text>
+          <text x="406" y="38" font-size="10" fill="#6b6c72">Step 1 · entry</text>
+          <text x="406" y="56" font-size="10" fill="#414550">Show resume CTA + credit</text>
+          <text x="406" y="68" font-size="10" fill="#414550">balance from paused window.</text>
+
+          <rect x="588" width="180" height="74" rx="6" fill="#fff" stroke="#fbd6d6"/>
+          <text x="602" y="20" font-weight="600" fill="#393a3d">Rejected · dark pattern</text>
+          <text x="602" y="38" font-size="10" fill="#6b6c72">Step 4 · confirm</text>
+          <text x="602" y="56" font-size="10" fill="#b3262d">Auto-renew nudge — fails</text>
+          <text x="602" y="68" font-size="10" fill="#b3262d">consent &amp; clarity check.</text>
+        </g>
+
+        <!-- curation log -->
+        <g transform="translate(20 138)">
+          <text font-size="10" fill="#cde7d8">Curation log</text>
+          <rect y="8" width="752" height="54" rx="6" fill="rgba(255,255,255,.07)"/>
+          <text x="14" y="26" font-size="10" fill="#cde7d8"><tspan font-weight="700" fill="#9ee8b9">✓ Accepted</tspan> · "we'll prorate today's date" — clearest, no urgency framing</text>
+          <text x="14" y="42" font-size="10" fill="#cde7d8"><tspan font-weight="700" fill="#9ee8b9">✓ Accepted</tspan> · enterprise self-serve ceiling → route to AE for custom terms</text>
+          <text x="14" y="58" font-size="10" fill="#cde7d8"><tspan font-weight="700" fill="#fbd6d6">✕ Rejected</tspan> · auto-renew nudge — violates consent principles</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============== STEP 4: COMMIT & EXPORT ============== -->
+  <g transform="translate(0 1390)">
+    <g transform="translate(24 0)">
+      <circle cx="20" cy="20" r="20" fill="#0a1628"/>
+      <text x="20" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">4</text>
+      <text x="54" y="18" font-size="11" font-weight="600" letter-spacing=".12em" fill="#6b6c72">STEP FOUR</text>
+      <text x="54" y="36" font-size="20" font-weight="600" font-family="Fraunces, serif" fill="#0a1628">Commit the curated flow as a versioned pattern</text>
+    </g>
+
+    <g transform="translate(24 70)">
+      <rect width="380" height="180" rx="8" fill="#fafbfc" stroke="#d4d7dc"/>
+      <text x="20" y="32" font-size="13" font-weight="600" fill="#0a1628">One click, four outputs</text>
+      <text x="20" y="56" font-size="12" fill="#414550">Pressing <tspan font-weight="600" fill="#2ca01c">Commit</tspan> publishes the curated</text>
+      <text x="20" y="74" font-size="12" fill="#414550">flow as a versioned pattern that other</text>
+      <text x="20" y="92" font-size="12" fill="#414550">product teams can consume.</text>
+
+      <text x="20" y="120" font-size="13" font-weight="600" fill="#0a1628">Outputs</text>
+      <text x="20" y="138" font-size="11" fill="#414550">▸ Figma library entry (auto-generated)</text>
+      <text x="20" y="154" font-size="11" fill="#414550">▸ Dev spec (JSON for the front-end team)</text>
+      <text x="20" y="170" font-size="11" fill="#414550">▸ Evidence trail (curation log + reasons)</text>
+    </g>
+
+    <g transform="translate(424 70)">
+      <rect width="832" height="180" rx="10" fill="#fff" stroke="#2ca01c" stroke-width="1.5"/>
+      <text x="32" y="38" font-size="11" font-weight="600" letter-spacing=".12em" fill="#0c6e4f">COMMITTED · v1.0</text>
+      <text x="32" y="66" font-size="22" font-weight="600" font-family="Fraunces, serif" fill="#0a1628">Upgrade · single SKU · Active</text>
+      <text x="32" y="86" font-size="12" fill="#414550">Available to all six product teams via the shared B&amp;S library.</text>
+
+      <!-- 3 stat boxes -->
+      <g transform="translate(32 110)">
+        <rect width="220" height="50" rx="6" fill="#e6f2eb"/>
+        <text x="14" y="20" font-size="10" font-weight="600" letter-spacing=".1em" fill="#0c6e4f">PRIMITIVES USED</text>
+        <text x="14" y="40" font-size="16" font-weight="700" font-family="Fraunces, serif" fill="#0a1628">4 · all from library</text>
+
+        <g transform="translate(236 0)">
+          <rect width="220" height="50" rx="6" fill="#e8f0fa"/>
+          <text x="14" y="20" font-size="10" font-weight="600" letter-spacing=".1em" fill="#0077c5">AI VARIANTS REVIEWED</text>
+          <text x="14" y="40" font-size="16" font-weight="700" font-family="Fraunces, serif" fill="#0a1628">12 · accepted 4</text>
+        </g>
+        <g transform="translate(472 0)">
+          <rect width="296" height="50" rx="6" fill="#f4f5f8"/>
+          <text x="14" y="20" font-size="10" font-weight="600" letter-spacing=".1em" fill="#393a3d">CONSUMERS</text>
+          <text x="14" y="40" font-size="16" font-weight="700" font-family="Fraunces, serif" fill="#0a1628">FlowBooks · 5 other surfaces</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

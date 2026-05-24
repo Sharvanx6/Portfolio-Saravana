@@ -1,0 +1,275 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 620" font-family="Inter Tight, sans-serif">
+  <text x="24" y="34" font-size="11" font-weight="600" letter-spacing=".14em" fill="#6b6c72">SAME BUILDER · TWO LIFECYCLE INTENTS · TWO DIFFERENT OUTPUTS</text>
+
+  <!-- ============== UPGRADE COLUMN ============== -->
+  <g transform="translate(40 70)">
+    <!-- column header -->
+    <g>
+      <rect width="580" height="56" rx="8" fill="#e6f2eb"/>
+      <circle cx="32" cy="28" r="14" fill="#2ca01c"/>
+      <path d="M 26 30 L 32 22 L 38 30" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="56" y="24" font-size="11" font-weight="600" letter-spacing=".12em" fill="#0c6e4f">SCENARIO · UPGRADE · SINGLE SKU</text>
+      <text x="56" y="42" font-size="13" font-weight="600" fill="#0a1628">Plus → Advanced · active customer</text>
+    </g>
+
+    <!-- builder config row -->
+    <g transform="translate(0 76)">
+      <text font-size="10" font-weight="700" letter-spacing=".1em" fill="#6b6c72">BUILDER CONFIG</text>
+      <g transform="translate(0 14)" font-size="11">
+        <rect width="580" height="60" rx="6" fill="#fafbfc" stroke="#d4d7dc"/>
+        <g transform="translate(16 22)">
+          <text font-weight="600" fill="#393a3d">Pattern</text>
+          <rect x="64" y="-10" width="120" height="18" rx="9" fill="#fff" stroke="#2ca01c"/>
+          <text x="124" y="3" text-anchor="middle" font-size="10" font-weight="600" fill="#0c6e4f">Upgrade · single SKU</text>
+        </g>
+        <g transform="translate(16 42)">
+          <text font-weight="600" fill="#393a3d">Tone</text>
+          <rect x="64" y="-10" width="56" height="18" rx="9" fill="#fff" stroke="#0077c5"/>
+          <text x="92" y="3" text-anchor="middle" font-size="10" font-weight="600" fill="#0077c5">forward</text>
+          <text x="136" y="3" font-size="10" fill="#6b6c72">· acquisition-positive</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- step preview cards -->
+    <g transform="translate(0 168)">
+      <text font-size="10" font-weight="700" letter-spacing=".1em" fill="#6b6c72">OUTPUT FLOW</text>
+      <g transform="translate(0 14)">
+        <!-- 4 step cards -->
+        <g>
+          <rect width="130" height="160" rx="6" fill="#fff" stroke="#2ca01c" stroke-width="1.2"/>
+          <text x="12" y="22" font-size="9" font-weight="600" letter-spacing=".1em" fill="#6b6c72">STEP 1</text>
+          <g transform="translate(12 30)">
+            <rect width="106" height="86" rx="3" fill="#f7f7f7"/>
+            <rect x="6" y="6" width="94" height="3" rx="1.5" fill="#2ca01c"/>
+            <rect x="6" y="14" width="40" height="3" rx="1.5" fill="#393a3d"/>
+            <rect x="6" y="22" width="28" height="6" rx="2" fill="#393a3d"/>
+            <line x1="6" y1="40" x2="100" y2="40" stroke="#d4d7dc" stroke-width=".6"/>
+            <rect x="6" y="70" width="50" height="11" rx="2" fill="#fff" stroke="#0077c5"/>
+            <text x="31" y="78" text-anchor="middle" font-size="6" font-weight="600" fill="#0077c5">Switch plan</text>
+          </g>
+          <text x="12" y="130" font-size="9" font-weight="600" fill="#0a1628">Subscription</text>
+          <text x="12" y="142" font-size="9" font-weight="600" fill="#0a1628">card</text>
+        </g>
+
+        <g transform="translate(150 0)">
+          <rect width="130" height="160" rx="6" fill="#fff" stroke="#2ca01c" stroke-width="1.2"/>
+          <text x="12" y="22" font-size="9" font-weight="600" letter-spacing=".1em" fill="#6b6c72">STEP 2</text>
+          <g transform="translate(12 30)">
+            <rect width="106" height="86" rx="3" fill="#f7f7f7"/>
+            <rect x="4" y="6" width="30" height="74" rx="2" fill="#fff" stroke="#d4d7dc"/>
+            <rect x="38" y="2" width="30" height="78" rx="2" fill="#fff" stroke="#2ca01c" stroke-width="1.2"/>
+            <rect x="38" y="2" width="30" height="3" rx="1.5" fill="#2ca01c"/>
+            <rect x="72" y="6" width="30" height="74" rx="2" fill="#fff" stroke="#d4d7dc"/>
+          </g>
+          <text x="12" y="130" font-size="9" font-weight="600" fill="#0a1628">Comparison</text>
+          <text x="12" y="142" font-size="9" font-weight="600" fill="#0a1628">block · 3-up</text>
+        </g>
+
+        <g transform="translate(300 0)">
+          <rect width="130" height="160" rx="6" fill="#fff" stroke="#2ca01c" stroke-width="1.2"/>
+          <text x="12" y="22" font-size="9" font-weight="600" letter-spacing=".1em" fill="#6b6c72">STEP 3</text>
+          <g transform="translate(12 30)">
+            <rect width="106" height="86" rx="3" fill="#f7f7f7"/>
+            <rect x="6" y="6" width="94" height="4" rx="2" fill="#393a3d"/>
+            <rect x="6" y="14" width="60" height="3" rx="1.5" fill="#babec5"/>
+            <rect x="6" y="22" width="94" height="20" rx="3" fill="#fff" stroke="#2ca01c"/>
+            <rect x="6" y="46" width="60" height="3" rx="1.5" fill="#babec5"/>
+            <rect x="6" y="72" width="44" height="9" rx="2" fill="#2ca01c"/>
+          </g>
+          <text x="12" y="130" font-size="9" font-weight="600" fill="#0a1628">Review</text>
+          <text x="12" y="142" font-size="9" font-weight="600" fill="#0a1628">trowser</text>
+        </g>
+
+        <g transform="translate(450 0)">
+          <rect width="130" height="160" rx="6" fill="#fff" stroke="#2ca01c" stroke-width="1.2"/>
+          <text x="12" y="22" font-size="9" font-weight="600" letter-spacing=".1em" fill="#6b6c72">STEP 4</text>
+          <g transform="translate(12 30)">
+            <rect width="106" height="86" rx="3" fill="#f7f7f7"/>
+            <circle cx="53" cy="28" r="10" fill="#2ca01c"/>
+            <path d="M 49 28 L 52 31 L 57 25" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="22" y="48" width="62" height="4" rx="2" fill="#393a3d"/>
+            <rect x="32" y="56" width="42" height="3" rx="1.5" fill="#babec5"/>
+            <rect x="34" y="70" width="38" height="9" rx="4" fill="#2ca01c"/>
+          </g>
+          <text x="12" y="130" font-size="9" font-weight="600" fill="#0a1628">Confirmation</text>
+          <text x="12" y="142" font-size="9" font-weight="600" fill="#0a1628">modal · success</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- key copy variants -->
+    <g transform="translate(0 358)">
+      <text font-size="10" font-weight="700" letter-spacing=".1em" fill="#6b6c72">KEY COPY · CURATED FOR UPGRADE INTENT</text>
+      <g transform="translate(0 14)" font-size="11">
+        <rect width="580" height="100" rx="6" fill="#fff" stroke="#d4d7dc"/>
+        <g transform="translate(16 22)">
+          <text font-size="10" font-weight="600" fill="#6b6c72">CTA</text>
+          <text y="16" font-weight="600" fill="#2ca01c">"Upgrade to Advanced →"</text>
+          <text y="32" font-size="10" fill="#6b6c72">forward-positive, action-oriented</text>
+        </g>
+        <g transform="translate(16 70)">
+          <text font-size="10" font-weight="600" fill="#6b6c72">CONFIRMATION</text>
+          <text y="16" font-weight="600" fill="#0a1628">"Welcome to FlowBooks Advanced. We'll prorate today."</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- vertical divider -->
+  <line x1="640" y1="80" x2="640" y2="560" stroke="#d4d7dc" stroke-dasharray="4 4"/>
+
+  <!-- ============== DOWNGRADE COLUMN ============== -->
+  <g transform="translate(660 70)">
+    <g>
+      <rect width="580" height="56" rx="8" fill="#fff5f4"/>
+      <circle cx="32" cy="28" r="14" fill="#b3262d"/>
+      <path d="M 26 26 L 32 34 L 38 26" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="56" y="24" font-size="11" font-weight="600" letter-spacing=".12em" fill="#7a1a1f">SCENARIO · DOWNGRADE REVIEW</text>
+      <text x="56" y="42" font-size="13" font-weight="600" fill="#0a1628">Plus → Simple · active customer</text>
+    </g>
+
+    <g transform="translate(0 76)">
+      <text font-size="10" font-weight="700" letter-spacing=".1em" fill="#6b6c72">BUILDER CONFIG</text>
+      <g transform="translate(0 14)" font-size="11">
+        <rect width="580" height="60" rx="6" fill="#fafbfc" stroke="#d4d7dc"/>
+        <g transform="translate(16 22)">
+          <text font-weight="600" fill="#393a3d">Pattern</text>
+          <rect x="64" y="-10" width="120" height="18" rx="9" fill="#fff" stroke="#b3262d"/>
+          <text x="124" y="3" text-anchor="middle" font-size="10" font-weight="600" fill="#7a1a1f">Downgrade review</text>
+        </g>
+        <g transform="translate(16 42)">
+          <text font-weight="600" fill="#393a3d">Tone</text>
+          <rect x="64" y="-10" width="92" height="18" rx="9" fill="#fff" stroke="#0077c5"/>
+          <text x="110" y="3" text-anchor="middle" font-size="10" font-weight="600" fill="#0077c5">loss-disclosing</text>
+          <text x="162" y="3" font-size="10" fill="#6b6c72">· honest, neutral</text>
+        </g>
+      </g>
+    </g>
+
+    <g transform="translate(0 168)">
+      <text font-size="10" font-weight="700" letter-spacing=".1em" fill="#6b6c72">OUTPUT FLOW</text>
+      <g transform="translate(0 14)">
+        <!-- step 1: subscription card entry -->
+        <g>
+          <rect width="130" height="160" rx="6" fill="#fff" stroke="#b3262d" stroke-width="1.2"/>
+          <text x="12" y="22" font-size="9" font-weight="600" letter-spacing=".1em" fill="#6b6c72">STEP 1</text>
+          <g transform="translate(12 30)">
+            <rect width="106" height="86" rx="3" fill="#f7f7f7"/>
+            <rect x="6" y="6" width="94" height="3" rx="1.5" fill="#2ca01c"/>
+            <rect x="6" y="14" width="40" height="3" rx="1.5" fill="#393a3d"/>
+            <rect x="6" y="22" width="28" height="6" rx="2" fill="#393a3d"/>
+            <line x1="6" y1="40" x2="100" y2="40" stroke="#d4d7dc" stroke-width=".6"/>
+            <rect x="6" y="70" width="58" height="11" rx="2" fill="#fff" stroke="#b3262d"/>
+            <text x="35" y="78" text-anchor="middle" font-size="6" font-weight="600" fill="#7a1a1f">Manage plan</text>
+          </g>
+          <text x="12" y="130" font-size="9" font-weight="600" fill="#0a1628">Subscription</text>
+          <text x="12" y="142" font-size="9" font-weight="600" fill="#0a1628">card</text>
+        </g>
+
+        <!-- step 2: loss comparison (different from upgrade's 3-up) -->
+        <g transform="translate(150 0)">
+          <rect width="130" height="160" rx="6" fill="#fff" stroke="#b3262d" stroke-width="1.2"/>
+          <text x="12" y="22" font-size="9" font-weight="600" letter-spacing=".1em" fill="#6b6c72">STEP 2</text>
+          <g transform="translate(12 30)">
+            <rect width="106" height="86" rx="3" fill="#f7f7f7"/>
+            <rect x="6" y="6" width="42" height="3" rx="1.5" fill="#0c6e4f"/>
+            <rect x="56" y="6" width="44" height="3" rx="1.5" fill="#b3262d"/>
+            <!-- comparison rows: green dots vs red x -->
+            <g transform="translate(6 14)">
+              <rect width="42" height="10" rx="1" fill="#fff" stroke="#d4d7dc"/>
+              <circle cx="6" cy="5" r="1.6" fill="#0c6e4f"/>
+              <rect width="42" height="10" rx="1" y="14" fill="#fff" stroke="#d4d7dc"/>
+              <circle cx="6" cy="19" r="1.6" fill="#0c6e4f"/>
+              <rect width="42" height="10" rx="1" y="28" fill="#fff" stroke="#d4d7dc"/>
+              <circle cx="6" cy="33" r="1.6" fill="#0c6e4f"/>
+              <rect width="42" height="10" rx="1" y="42" fill="#fff" stroke="#d4d7dc"/>
+              <circle cx="6" cy="47" r="1.6" fill="#0c6e4f"/>
+            </g>
+            <g transform="translate(56 14)">
+              <rect width="44" height="10" rx="1" fill="#fbd6d6"/>
+              <text x="6" y="8" font-size="6" font-weight="700" fill="#b3262d">✕</text>
+              <rect width="44" height="10" rx="1" y="14" fill="#fbd6d6"/>
+              <text x="6" y="22" font-size="6" font-weight="700" fill="#b3262d">✕</text>
+              <rect width="44" height="10" rx="1" y="28" fill="#fbd6d6"/>
+              <text x="6" y="36" font-size="6" font-weight="700" fill="#b3262d">✕</text>
+              <rect width="44" height="10" rx="1" y="42" fill="#fbd6d6"/>
+              <text x="6" y="50" font-size="6" font-weight="700" fill="#b3262d">✕</text>
+            </g>
+          </g>
+          <text x="12" y="130" font-size="9" font-weight="600" fill="#0a1628">Loss-disclosing</text>
+          <text x="12" y="142" font-size="9" font-weight="600" fill="#0a1628">compare · 2-col</text>
+        </g>
+
+        <!-- step 3: impact summary -->
+        <g transform="translate(300 0)">
+          <rect width="130" height="160" rx="6" fill="#fff" stroke="#b3262d" stroke-width="1.2"/>
+          <text x="12" y="22" font-size="9" font-weight="600" letter-spacing=".1em" fill="#6b6c72">STEP 3</text>
+          <g transform="translate(12 30)">
+            <rect width="106" height="86" rx="3" fill="#f7f7f7"/>
+            <rect x="6" y="6" width="94" height="4" rx="2" fill="#393a3d"/>
+            <!-- icon + label rows -->
+            <g transform="translate(6 16)">
+              <circle cx="5" cy="5" r="3" fill="#946e3a"/>
+              <rect x="14" width="50" height="3" rx="1.5" y="3" fill="#393a3d"/>
+              <rect x="14" width="80" height="2" rx="1" y="8" fill="#babec5"/>
+            </g>
+            <g transform="translate(6 30)">
+              <circle cx="5" cy="5" r="3" fill="#946e3a"/>
+              <rect x="14" width="50" height="3" rx="1.5" y="3" fill="#393a3d"/>
+              <rect x="14" width="80" height="2" rx="1" y="8" fill="#babec5"/>
+            </g>
+            <g transform="translate(6 44)">
+              <circle cx="5" cy="5" r="3" fill="#946e3a"/>
+              <rect x="14" width="50" height="3" rx="1.5" y="3" fill="#393a3d"/>
+              <rect x="14" width="80" height="2" rx="1" y="8" fill="#babec5"/>
+            </g>
+            <rect x="6" y="74" width="48" height="9" rx="2" fill="#fff" stroke="#393a3d"/>
+            <rect x="58" y="74" width="42" height="9" rx="2" fill="#b3262d"/>
+          </g>
+          <text x="12" y="130" font-size="9" font-weight="600" fill="#0a1628">Impact summary</text>
+          <text x="12" y="142" font-size="9" font-weight="600" fill="#0a1628">+ dual CTA</text>
+        </g>
+
+        <!-- step 4: confirmation (different tone — calm, neutral, not celebratory) -->
+        <g transform="translate(450 0)">
+          <rect width="130" height="160" rx="6" fill="#fff" stroke="#b3262d" stroke-width="1.2"/>
+          <text x="12" y="22" font-size="9" font-weight="600" letter-spacing=".1em" fill="#6b6c72">STEP 4</text>
+          <g transform="translate(12 30)">
+            <rect width="106" height="86" rx="3" fill="#f7f7f7"/>
+            <!-- info circle, not celebration -->
+            <circle cx="53" cy="28" r="10" fill="#0077c5"/>
+            <text x="53" y="32" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">i</text>
+            <rect x="22" y="48" width="62" height="4" rx="2" fill="#393a3d"/>
+            <rect x="32" y="56" width="42" height="3" rx="1.5" fill="#babec5"/>
+            <rect x="34" y="70" width="38" height="9" rx="4" fill="#0a1628"/>
+          </g>
+          <text x="12" y="130" font-size="9" font-weight="600" fill="#0a1628">Confirmation</text>
+          <text x="12" y="142" font-size="9" font-weight="600" fill="#0a1628">modal · neutral</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- key copy variants -->
+    <g transform="translate(0 358)">
+      <text font-size="10" font-weight="700" letter-spacing=".1em" fill="#6b6c72">KEY COPY · CURATED FOR DOWNGRADE INTENT</text>
+      <g transform="translate(0 14)" font-size="11">
+        <rect width="580" height="100" rx="6" fill="#fff" stroke="#d4d7dc"/>
+        <g transform="translate(16 22)">
+          <text font-size="10" font-weight="600" fill="#6b6c72">CTA</text>
+          <text y="16" font-weight="600" fill="#0a1628">"Continue to downgrade"</text>
+          <text y="32" font-size="10" fill="#6b6c72">neutral, never coercive — sits next to "Keep my plan"</text>
+        </g>
+        <g transform="translate(16 70)">
+          <text font-size="10" font-weight="600" fill="#6b6c72">CONFIRMATION</text>
+          <text y="16" font-weight="600" fill="#0a1628">"Your plan changes to Simple on Jul 1. You can switch back anytime."</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- bottom line -->
+  <g transform="translate(40 600)">
+    <text font-size="11" font-style="italic" fill="#6b6c72">Identical primitive vocabulary · different lifecycle intent · entirely different customer experience — produced from one builder, in one session.</text>
+  </g>
+</svg>

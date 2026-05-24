@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480">
+  <defs>
+    <linearGradient id="left-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff5f4"/>
+      <stop offset="1" stop-color="#fbe5e3"/>
+    </linearGradient>
+    <linearGradient id="right-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaf6e9"/>
+      <stop offset="1" stop-color="#d6efd5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- LEFT PANEL: fragmented today -->
+  <g transform="translate(0 0)">
+    <rect x="40" y="36" width="500" height="408" rx="16" fill="url(#left-bg)"/>
+    <text x="64" y="74" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" letter-spacing=".14em" fill="#b3262d">TODAY · FRAGMENTED</text>
+    <text x="64" y="106" font-family="Fraunces, serif" font-size="22" font-weight="600" fill="#0a1628">Six teams, six patterns</text>
+    <text x="64" y="128" font-family="Inter Tight, sans-serif" font-size="13" fill="#414550">Each surface ships its own upgrade, cancel and recovery flow.</text>
+
+    <!-- 6 mismatched mini-screens at varying sizes / corners -->
+    <g transform="translate(64 150)">
+      <!-- s1 -->
+      <g>
+        <rect width="120" height="88" rx="6" fill="#fff" stroke="#d4d7dc"/>
+        <rect x="8" y="10" width="50" height="4" rx="2" fill="#393a3d"/>
+        <rect x="8" y="22" width="80" height="3" rx="1.5" fill="#babec5"/>
+        <rect x="8" y="60" width="56" height="18" rx="3" fill="#2ca01c"/>
+      </g>
+      <!-- s2: pill button instead -->
+      <g transform="translate(135 4)">
+        <rect width="120" height="88" rx="12" fill="#fff" stroke="#d4d7dc"/>
+        <rect x="8" y="10" width="60" height="4" rx="2" fill="#393a3d"/>
+        <circle cx="60" cy="48" r="14" fill="#fbd6d6"/>
+        <rect x="8" y="68" width="80" height="14" rx="7" fill="#0a1628"/>
+      </g>
+      <!-- s3 -->
+      <g transform="translate(270 -2)">
+        <rect width="120" height="88" rx="4" fill="#fff" stroke="#d4d7dc"/>
+        <rect x="8" y="10" width="44" height="4" rx="2" fill="#393a3d"/>
+        <rect x="8" y="22" width="100" height="3" rx="1.5" fill="#babec5"/>
+        <rect x="8" y="32" width="100" height="3" rx="1.5" fill="#babec5"/>
+        <rect x="8" y="62" width="32" height="16" rx="2" fill="#d71e28"/>
+        <rect x="44" y="62" width="32" height="16" rx="2" fill="#fff" stroke="#0a1628"/>
+      </g>
+      <!-- s4 (different button) -->
+      <g transform="translate(0 110)">
+        <rect width="120" height="88" rx="2" fill="#fff" stroke="#d4d7dc"/>
+        <rect x="8" y="10" width="80" height="4" rx="2" fill="#393a3d"/>
+        <rect x="8" y="20" width="100" height="32" rx="2" fill="#f4f5f8"/>
+        <rect x="8" y="62" width="60" height="16" rx="8" fill="#946e3a"/>
+      </g>
+      <!-- s5 (different colors) -->
+      <g transform="translate(135 116)">
+        <rect width="120" height="88" rx="8" fill="#fff" stroke="#d4d7dc"/>
+        <rect x="8" y="10" width="56" height="4" rx="2" fill="#393a3d"/>
+        <rect x="8" y="56" width="40" height="14" rx="2" fill="#0077c5"/>
+        <rect x="52" y="56" width="48" height="14" rx="2" fill="#fff" stroke="#0077c5"/>
+      </g>
+      <!-- s6 -->
+      <g transform="translate(270 108)">
+        <rect width="120" height="88" rx="6" fill="#fff" stroke="#d4d7dc"/>
+        <rect x="8" y="10" width="48" height="4" rx="2" fill="#393a3d"/>
+        <circle cx="100" cy="14" r="6" fill="#fad7d6"/>
+        <rect x="8" y="62" width="100" height="16" rx="3" fill="#393a3d"/>
+      </g>
+    </g>
+
+    <!-- pain badges -->
+    <g transform="translate(64 372)">
+      <rect width="156" height="26" rx="13" fill="#fff" stroke="#fbd6d6"/>
+      <text x="14" y="17" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" fill="#b3262d">design debt</text>
+      <rect x="166" width="146" height="26" rx="13" fill="#fff" stroke="#fbd6d6"/>
+      <text x="180" y="17" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" fill="#b3262d">duplicated effort</text>
+      <rect x="318" width="138" height="26" rx="13" fill="#fff" stroke="#fbd6d6"/>
+      <text x="332" y="17" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" fill="#b3262d">inconsistent UX</text>
+    </g>
+  </g>
+
+  <!-- connector arrow -->
+  <g transform="translate(560 220)">
+    <path d="M 0 20 L 70 20" stroke="#0a1628" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 60 12 L 70 20 L 60 28" stroke="#0a1628" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="38" y="0" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" fill="#0a1628">our work</text>
+  </g>
+
+  <!-- RIGHT PANEL: unified pattern system -->
+  <g transform="translate(640 0)">
+    <rect x="20" y="36" width="500" height="408" rx="16" fill="url(#right-bg)"/>
+    <text x="44" y="74" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" letter-spacing=".14em" fill="#0c6e4f">SYSTEM · UNIFIED</text>
+    <text x="44" y="106" font-family="Fraunces, serif" font-size="22" font-weight="600" fill="#0a1628">One builder, every flow</text>
+    <text x="44" y="128" font-family="Inter Tight, sans-serif" font-size="13" fill="#414550">A reusable library of patterns, configured per surface and per state.</text>
+
+    <!-- consistent grid of cards -->
+    <g transform="translate(44 150)">
+      <!-- card 1 -->
+      <g>
+        <rect width="120" height="88" rx="6" fill="#fff" stroke="#9ee8b9" stroke-width="1.4"/>
+        <rect x="0" y="0" width="120" height="4" rx="2" fill="#2ca01c"/>
+        <rect x="8" y="14" width="50" height="4" rx="2" fill="#393a3d"/>
+        <rect x="8" y="26" width="80" height="3" rx="1.5" fill="#babec5"/>
+        <rect x="8" y="64" width="56" height="16" rx="3" fill="#2ca01c"/>
+        <rect x="68" y="64" width="44" height="16" rx="3" fill="#fff" stroke="#2ca01c"/>
+      </g>
+      <g transform="translate(135 0)">
+        <rect width="120" height="88" rx="6" fill="#fff" stroke="#9ee8b9" stroke-width="1.4"/>
+        <rect x="0" y="0" width="120" height="4" rx="2" fill="#2ca01c"/>
+        <rect x="8" y="14" width="50" height="4" rx="2" fill="#393a3d"/>
+        <rect x="8" y="26" width="80" height="3" rx="1.5" fill="#babec5"/>
+        <rect x="8" y="64" width="56" height="16" rx="3" fill="#2ca01c"/>
+        <rect x="68" y="64" width="44" height="16" rx="3" fill="#fff" stroke="#2ca01c"/>
+      </g>
+      <g transform="translate(270 0)">
+        <rect width="120" height="88" rx="6" fill="#fff" stroke="#9ee8b9" stroke-width="1.4"/>
+        <rect x="0" y="0" width="120" height="4" rx="2" fill="#2ca01c"/>
+        <rect x="8" y="14" width="50" height="4" rx="2" fill="#393a3d"/>
+        <rect x="8" y="26" width="80" height="3" rx="1.5" fill="#babec5"/>
+        <rect x="8" y="64" width="56" height="16" rx="3" fill="#2ca01c"/>
+        <rect x="68" y="64" width="44" height="16" rx="3" fill="#fff" stroke="#2ca01c"/>
+      </g>
+      <g transform="translate(0 110)">
+        <rect width="120" height="88" rx="6" fill="#fff" stroke="#9ee8b9" stroke-width="1.4"/>
+        <rect x="0" y="0" width="120" height="4" rx="2" fill="#2ca01c"/>
+        <rect x="8" y="14" width="50" height="4" rx="2" fill="#393a3d"/>
+        <rect x="8" y="26" width="80" height="3" rx="1.5" fill="#babec5"/>
+        <rect x="8" y="64" width="56" height="16" rx="3" fill="#2ca01c"/>
+        <rect x="68" y="64" width="44" height="16" rx="3" fill="#fff" stroke="#2ca01c"/>
+      </g>
+      <g transform="translate(135 110)">
+        <rect width="120" height="88" rx="6" fill="#fff" stroke="#9ee8b9" stroke-width="1.4"/>
+        <rect x="0" y="0" width="120" height="4" rx="2" fill="#2ca01c"/>
+        <rect x="8" y="14" width="50" height="4" rx="2" fill="#393a3d"/>
+        <rect x="8" y="26" width="80" height="3" rx="1.5" fill="#babec5"/>
+        <rect x="8" y="64" width="56" height="16" rx="3" fill="#2ca01c"/>
+        <rect x="68" y="64" width="44" height="16" rx="3" fill="#fff" stroke="#2ca01c"/>
+      </g>
+      <g transform="translate(270 110)">
+        <rect width="120" height="88" rx="6" fill="#fff" stroke="#9ee8b9" stroke-width="1.4"/>
+        <rect x="0" y="0" width="120" height="4" rx="2" fill="#2ca01c"/>
+        <rect x="8" y="14" width="50" height="4" rx="2" fill="#393a3d"/>
+        <rect x="8" y="26" width="80" height="3" rx="1.5" fill="#babec5"/>
+        <rect x="8" y="64" width="56" height="16" rx="3" fill="#2ca01c"/>
+        <rect x="68" y="64" width="44" height="16" rx="3" fill="#fff" stroke="#2ca01c"/>
+      </g>
+    </g>
+
+    <!-- gain badges -->
+    <g transform="translate(44 372)">
+      <rect width="120" height="26" rx="13" fill="#fff" stroke="#9ee8b9"/>
+      <text x="14" y="17" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" fill="#0c6e4f">scalable</text>
+      <rect x="130" width="138" height="26" rx="13" fill="#fff" stroke="#9ee8b9"/>
+      <text x="144" y="17" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" fill="#0c6e4f">edge-case ready</text>
+      <rect x="278" width="160" height="26" rx="13" fill="#fff" stroke="#9ee8b9"/>
+      <text x="292" y="17" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" fill="#0c6e4f">consistent across SKUs</text>
+    </g>
+  </g>
+</svg>
