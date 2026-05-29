@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640">
+  <defs>
+    <filter id="lf-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="4"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".22"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <text x="600" y="34" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" letter-spacing=".14em" fill="#6b6c72">THE LEGACY AUTHORING CONSOLE · A SINGLE-PAGE FORM</text>
+
+  <!-- form card -->
+  <g transform="translate(60 64)" filter="url(#lf-shadow)" font-family="Inter Tight, sans-serif">
+    <rect width="760" height="540" rx="10" fill="#fff" stroke="#d4d7dc"/>
+
+    <!-- header strip -->
+    <rect x="0" y="0" width="760" height="44" rx="10" fill="#f5f6f8"/>
+    <rect x="0" y="34" width="760" height="10" fill="#f5f6f8"/>
+    <text x="20" y="28" fill="#0a1628" font-size="13" font-weight="600">New Promotion · all fields required</text>
+    <g transform="translate(640 14)">
+      <rect width="100" height="18" rx="4" fill="#fff" stroke="#d4d7dc"/>
+      <text x="50" y="13" text-anchor="middle" fill="#6b6c72" font-size="10" font-weight="500">Save draft</text>
+    </g>
+
+    <!-- 22 fields in 3 columns x 7-8 rows -->
+    <g transform="translate(0 56)" font-size="9.5" fill="#6b6c72">
+      <!-- Column 1 -->
+      <g transform="translate(20 0)">
+        <text y="10" font-weight="600" fill="#0a1628">Promotion name *</text>
+        <rect y="16" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="32" fill="#a8aab0" font-size="9.5">FY26-Q3-SMB-FED…</text>
+
+        <text y="58" font-weight="600" fill="#0a1628">Promotion type *</text>
+        <rect y="64" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="80" font-size="9.5">Discount %</text>
+        <polygon points="205,76 213,76 209,82" fill="#6b6c72"/>
+
+        <text y="106" font-weight="600" fill="#0a1628">SKU / product *</text>
+        <rect y="112" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="128" font-size="9.5">FlowTax Fed (sku_4421)</text>
+        <polygon points="205,124 213,124 209,130" fill="#6b6c72"/>
+
+        <text y="154" font-weight="600" fill="#0a1628">SKU sub-variant</text>
+        <rect y="160" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="176" fill="#a8aab0" font-size="9.5">Optional</text>
+
+        <text y="202" font-weight="600" fill="#0a1628">Discount value *</text>
+        <rect y="208" width="100" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="224" font-size="9.5">20</text>
+        <rect x="112" y="208" width="108" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="120" y="224" font-size="9.5">percent</text>
+
+        <text y="250" font-weight="600" fill="#0a1628">Discount tier rules</text>
+        <rect y="256" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="272" fill="#a8aab0" font-size="9.5">{} JSON only</text>
+
+        <text y="298" font-weight="600" fill="#0a1628">Min cart value</text>
+        <rect y="304" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="320" fill="#a8aab0" font-size="9.5">USD</text>
+
+        <text y="346" font-weight="600" fill="#0a1628">Max discount cap</text>
+        <rect y="352" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="368" fill="#a8aab0" font-size="9.5">USD</text>
+      </g>
+
+      <!-- Column 2 -->
+      <g transform="translate(265 0)">
+        <text y="10" font-weight="600" fill="#0a1628">Start date *</text>
+        <rect y="16" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="32" font-size="9.5">2026-07-01</text>
+        <rect x="195" y="20" width="16" height="16" rx="2" fill="#f5f6f8" stroke="#d4d7dc"/>
+
+        <text y="58" font-weight="600" fill="#0a1628">End date *</text>
+        <rect y="64" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="80" font-size="9.5">2026-09-30</text>
+        <rect x="195" y="68" width="16" height="16" rx="2" fill="#f5f6f8" stroke="#d4d7dc"/>
+
+        <text y="106" font-weight="600" fill="#0a1628">Dynamic expiry rule</text>
+        <rect y="112" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="128" fill="#a8aab0" font-size="9.5">Optional · JSON</text>
+
+        <text y="154" font-weight="600" fill="#0a1628">Customer segment *</text>
+        <rect y="160" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="176" font-size="9.5">SMB</text>
+        <polygon points="205,172 213,172 209,178" fill="#6b6c72"/>
+
+        <text y="202" font-weight="600" fill="#0a1628">Segment filter (advanced)</text>
+        <rect y="208" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="224" fill="#a8aab0" font-size="9.5">{} segmentRule JSON</text>
+
+        <text y="250" font-weight="600" fill="#0a1628">Geo eligibility</text>
+        <rect y="256" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="272" font-size="9.5">US (all states)</text>
+        <polygon points="205,268 213,268 209,274" fill="#6b6c72"/>
+
+        <text y="298" font-weight="600" fill="#0a1628">Channel</text>
+        <rect y="304" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="320" font-size="9.5">Web · Mobile</text>
+
+        <text y="346" font-weight="600" fill="#0a1628">Lifecycle state filter</text>
+        <rect y="352" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="368" fill="#a8aab0" font-size="9.5">Optional</text>
+      </g>
+
+      <!-- Column 3 -->
+      <g transform="translate(510 0)">
+        <text y="10" font-weight="600" fill="#0a1628">Stacking rule</text>
+        <rect y="16" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="32" font-size="9.5">No stacking</text>
+        <polygon points="205,28 213,28 209,34" fill="#6b6c72"/>
+
+        <text y="58" font-weight="600" fill="#0a1628">Priority (1–10) *</text>
+        <rect y="64" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="80" font-size="9.5">5</text>
+
+        <text y="106" font-weight="600" fill="#0a1628">Balance manager flag</text>
+        <rect y="112" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="128" font-size="9.5">false</text>
+        <polygon points="205,124 213,124 209,130" fill="#6b6c72"/>
+
+        <text y="154" font-weight="600" fill="#0a1628">BXGY config</text>
+        <rect y="160" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="176" fill="#a8aab0" font-size="9.5">Not applicable</text>
+
+        <text y="202" font-weight="600" fill="#0a1628">Display name (customer)</text>
+        <rect y="208" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="224" fill="#a8aab0" font-size="9.5">Required if surfaced</text>
+
+        <text y="250" font-weight="600" fill="#0a1628">Banner copy</text>
+        <rect y="256" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="272" fill="#a8aab0" font-size="9.5">Optional</text>
+
+        <text y="298" font-weight="600" fill="#0a1628">Owner email *</text>
+        <rect y="304" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="320" font-size="9.5">s.kumar@…</text>
+
+        <text y="346" font-weight="600" fill="#0a1628">Approver email *</text>
+        <rect y="352" width="220" height="24" rx="3" fill="#fff" stroke="#d4d7dc"/>
+        <text x="10" y="368" fill="#a8aab0" font-size="9.5">Required for publish</text>
+      </g>
+    </g>
+
+    <!-- 22+ counter at bottom -->
+    <g transform="translate(20 460)">
+      <rect width="720" height="60" rx="6" fill="#fff7f0" stroke="#f0a83a" stroke-width="1"/>
+      <circle cx="22" cy="30" r="10" fill="#f0a83a"/>
+      <text x="22" y="34" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">!</text>
+      <text x="44" y="24" font-size="11" font-weight="600" fill="#0a1628">22 fields visible · 6 more on Advanced tab · 4 more on Approval tab</text>
+      <text x="44" y="40" font-size="10" fill="#6b6c72">No preview. No impact estimate. No way to see what your draft actually does until it ships.</text>
+      <g transform="translate(620 18)">
+        <rect width="80" height="24" rx="3" fill="#27a55a"/>
+        <text x="40" y="16" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">Submit</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right column: "what makes this hard" -->
+  <g transform="translate(860 80)" font-family="Inter Tight, sans-serif">
+    <text y="0" font-size="11" font-weight="600" letter-spacing=".12em" fill="#c14d2e">WHY IT BREAKS</text>
+
+    <g transform="translate(0 30)">
+      <rect width="280" height="92" rx="8" fill="#fff" stroke="#d4d7dc"/>
+      <rect x="0" y="0" width="4" height="92" rx="2" fill="#c14d2e"/>
+      <text x="18" y="22" font-size="12" font-weight="600" fill="#0a1628">Cognitive overload</text>
+      <text x="18" y="42" font-size="11" fill="#6b6c72">22+ fields on screen at once.</text>
+      <text x="18" y="58" font-size="11" fill="#6b6c72">14 are redundant for any given</text>
+      <text x="18" y="74" font-size="11" fill="#6b6c72">promotion type the user picks.</text>
+    </g>
+
+    <g transform="translate(0 142)">
+      <rect width="280" height="92" rx="8" fill="#fff" stroke="#d4d7dc"/>
+      <rect x="0" y="0" width="4" height="92" rx="2" fill="#c14d2e"/>
+      <text x="18" y="22" font-size="12" font-weight="600" fill="#0a1628">No type-aware UI</text>
+      <text x="18" y="42" font-size="11" fill="#6b6c72">Six different promo types share</text>
+      <text x="18" y="58" font-size="11" fill="#6b6c72">one rigid form. Custom configs</text>
+      <text x="18" y="74" font-size="11" fill="#6b6c72">leak into raw JSON fields.</text>
+    </g>
+
+    <g transform="translate(0 254)">
+      <rect width="280" height="92" rx="8" fill="#fff" stroke="#d4d7dc"/>
+      <rect x="0" y="0" width="4" height="92" rx="2" fill="#c14d2e"/>
+      <text x="18" y="22" font-size="12" font-weight="600" fill="#0a1628">No impact preview</text>
+      <text x="18" y="42" font-size="11" fill="#6b6c72">User has no way to see who</text>
+      <text x="18" y="58" font-size="11" fill="#6b6c72">gets the promo, what it costs,</text>
+      <text x="18" y="74" font-size="11" fill="#6b6c72">or whether it stacks badly.</text>
+    </g>
+
+    <g transform="translate(0 366)">
+      <rect width="280" height="92" rx="8" fill="#fff" stroke="#d4d7dc"/>
+      <rect x="0" y="0" width="4" height="92" rx="2" fill="#c14d2e"/>
+      <text x="18" y="22" font-size="12" font-weight="600" fill="#0a1628">Custom = eng ticket</text>
+      <text x="18" y="42" font-size="11" fill="#6b6c72">Anything outside "standard" goes</text>
+      <text x="18" y="58" font-size="11" fill="#6b6c72">to engineering. 3–7 days of</text>
+      <text x="18" y="74" font-size="11" fill="#6b6c72">handoffs before a promo lives.</text>
+    </g>
+  </g>
+</svg>

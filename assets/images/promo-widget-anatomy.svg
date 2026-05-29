@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660">
+  <defs>
+    <filter id="wa-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="4"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".22"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <text x="600" y="34" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" letter-spacing=".14em" fill="#6b6c72">THE WIDGET · READ-ONLY DEFAULT · DROPS IN ANYWHERE</text>
+
+  <!-- ===== WIDGET (left) ===== -->
+  <g transform="translate(60 70)" font-family="Inter Tight, sans-serif" filter="url(#wa-shadow)">
+    <rect width="640" height="540" rx="12" fill="#fff" stroke="#d4d7dc"/>
+
+    <!-- A: Header strip -->
+    <rect x="0" y="0" width="640" height="64" rx="12" fill="#f8f7fc"/>
+    <rect x="0" y="52" width="640" height="12" fill="#f8f7fc"/>
+    <text x="24" y="26" font-size="10" font-weight="600" letter-spacing=".08em" fill="#5546d6">PROMOTION</text>
+    <text x="24" y="48" font-size="15" font-weight="600" fill="#0a1628">FY26-Q3 · SMB · FlowTax Federal · 20% off</text>
+    <g transform="translate(520 22)">
+      <rect width="96" height="22" rx="11" fill="#dcf5e2"/>
+      <text x="48" y="15" text-anchor="middle" font-size="10" font-weight="600" fill="#1a7c45" letter-spacing=".06em">ACTIVE · 47 DAYS</text>
+    </g>
+
+    <!-- B: The rule in plain English -->
+    <g transform="translate(24 84)">
+      <text font-size="10" font-weight="600" letter-spacing=".08em" fill="#6b6c72">THE RULE</text>
+      <text y="22" font-size="13" fill="#0a1628">20% off the standard FlowTax Federal SKU,</text>
+      <text y="40" font-size="13" fill="#0a1628">for SMB customers, from Jul 1 to Sep 30, 2026.</text>
+      <text y="58" font-size="13" fill="#0a1628">Does not stack with the Pro-Bundle promo.</text>
+    </g>
+
+    <!-- C: Scope · 3 chips -->
+    <g transform="translate(24 168)">
+      <text font-size="10" font-weight="600" letter-spacing=".08em" fill="#6b6c72">SCOPE</text>
+      <g transform="translate(0 14)">
+        <rect width="140" height="58" rx="8" fill="#f5f6f8"/>
+        <text x="16" y="22" font-size="10" fill="#6b6c72">Customer segment</text>
+        <text x="16" y="44" font-size="14" font-weight="600" fill="#0a1628">SMB</text>
+      </g>
+      <g transform="translate(150 14)">
+        <rect width="140" height="58" rx="8" fill="#f5f6f8"/>
+        <text x="16" y="22" font-size="10" font-weight="600" fill="#6b6c72">Eligible accounts</text>
+        <text x="16" y="44" font-size="14" font-weight="600" fill="#0a1628">12,840</text>
+      </g>
+      <g transform="translate(300 14)">
+        <rect width="140" height="58" rx="8" fill="#f5f6f8"/>
+        <text x="16" y="22" font-size="10" font-weight="600" fill="#6b6c72">Discount value</text>
+        <text x="16" y="44" font-size="14" font-weight="600" fill="#c14d2e">20% off</text>
+      </g>
+      <g transform="translate(450 14)">
+        <rect width="140" height="58" rx="8" fill="#f5f6f8"/>
+        <text x="16" y="22" font-size="10" font-weight="600" fill="#6b6c72">Stacks with</text>
+        <text x="16" y="44" font-size="14" font-weight="600" fill="#0a1628">Nothing</text>
+      </g>
+    </g>
+
+    <!-- D: History timeline -->
+    <g transform="translate(24 270)">
+      <text font-size="10" font-weight="600" letter-spacing=".08em" fill="#6b6c72">HISTORY</text>
+      <line x1="8" y1="34" x2="8" y2="148" stroke="#d4d7dc" stroke-width="1.5"/>
+      <circle cx="8" cy="40" r="4" fill="#27a55a"/>
+      <text x="22" y="44" font-size="11" font-weight="600" fill="#0a1628">Authored via agent</text>
+      <text x="22" y="58" font-size="10" fill="#6b6c72">s.kumar · Jun 28, 2026 · ~9 min conversation</text>
+      <circle cx="8" cy="80" r="4" fill="#a294f5"/>
+      <text x="22" y="84" font-size="11" font-weight="600" fill="#0a1628">Approved inline</text>
+      <text x="22" y="98" font-size="10" fill="#6b6c72">k.morgan · Jun 28, 2026 · approval in chat</text>
+      <circle cx="8" cy="120" r="4" fill="#6c5ce7"/>
+      <text x="22" y="124" font-size="11" font-weight="600" fill="#0a1628">Activated</text>
+      <text x="22" y="138" font-size="10" fill="#6b6c72">System · Jul 1, 2026 · committed to pricing engine</text>
+    </g>
+
+    <!-- E: Actions row -->
+    <g transform="translate(24 444)">
+      <rect width="120" height="32" rx="6" fill="#6c5ce7"/>
+      <text x="60" y="22" text-anchor="middle" font-size="11" font-weight="600" fill="#fff">Edit in agent</text>
+      <g transform="translate(132 0)">
+        <rect width="140" height="32" rx="6" fill="#fff" stroke="#d4d7dc"/>
+        <text x="70" y="22" text-anchor="middle" font-size="11" font-weight="500" fill="#0a1628">Open legacy form</text>
+      </g>
+      <g transform="translate(284 0)">
+        <rect width="100" height="32" rx="6" fill="#fff" stroke="#d4d7dc"/>
+        <text x="50" y="22" text-anchor="middle" font-size="11" font-weight="500" fill="#0a1628">View audit</text>
+      </g>
+      <g transform="translate(396 0)">
+        <rect width="100" height="32" rx="6" fill="#fff" stroke="#d4d7dc"/>
+        <text x="50" y="22" text-anchor="middle" font-size="11" font-weight="500" fill="#c14d2e">End early</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ===== ANNOTATIONS (right) ===== -->
+  <g transform="translate(760 70)" font-family="Inter Tight, sans-serif">
+    <text font-size="11" font-weight="600" letter-spacing=".14em" fill="#6b6c72">ANATOMY</text>
+
+    <!-- A annotation -->
+    <g transform="translate(0 24)">
+      <circle cx="14" cy="14" r="14" fill="#5546d6"/>
+      <text x="14" y="19" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">A</text>
+      <text x="42" y="14" font-size="13" font-weight="600" fill="#0a1628">Header strip</text>
+      <text x="42" y="30" font-size="11" fill="#6b6c72">Promo name and status — both</text>
+      <text x="42" y="44" font-size="11" fill="#6b6c72">answer the "what is this?" question.</text>
+    </g>
+
+    <!-- B annotation -->
+    <g transform="translate(0 110)">
+      <circle cx="14" cy="14" r="14" fill="#5546d6"/>
+      <text x="14" y="19" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">B</text>
+      <text x="42" y="14" font-size="13" font-weight="600" fill="#0a1628">The rule, in plain English</text>
+      <text x="42" y="30" font-size="11" fill="#6b6c72">The pricing engine config translated</text>
+      <text x="42" y="44" font-size="11" fill="#6b6c72">into a sentence anyone can read.</text>
+      <text x="42" y="58" font-size="11" fill="#6b6c72">Not a "rules JSON" panel.</text>
+    </g>
+
+    <!-- C annotation -->
+    <g transform="translate(0 210)">
+      <circle cx="14" cy="14" r="14" fill="#5546d6"/>
+      <text x="14" y="19" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">C</text>
+      <text x="42" y="14" font-size="13" font-weight="600" fill="#0a1628">Scope · structured chips</text>
+      <text x="42" y="30" font-size="11" fill="#6b6c72">Segment, eligible accounts, value,</text>
+      <text x="42" y="44" font-size="11" fill="#6b6c72">stacking. The four questions support</text>
+      <text x="42" y="58" font-size="11" fill="#6b6c72">teams ask, lifted out of the form.</text>
+    </g>
+
+    <!-- D annotation -->
+    <g transform="translate(0 310)">
+      <circle cx="14" cy="14" r="14" fill="#5546d6"/>
+      <text x="14" y="19" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">D</text>
+      <text x="42" y="14" font-size="13" font-weight="600" fill="#0a1628">History · the audit trail</text>
+      <text x="42" y="30" font-size="11" fill="#6b6c72">Authored, approved, activated.</text>
+      <text x="42" y="44" font-size="11" fill="#6b6c72">Tap any event to see the original</text>
+      <text x="42" y="58" font-size="11" fill="#6b6c72">conversation that created it.</text>
+    </g>
+
+    <!-- legacy form toggle note -->
+    <g transform="translate(0 410)">
+      <rect width="360" height="98" rx="8" fill="#fff7f0" stroke="#f0a83a"/>
+      <text x="18" y="22" font-size="11" font-weight="600" letter-spacing=".08em" fill="#8a5e10">THE LEGACY FORM IS NOT DEAD</text>
+      <text x="18" y="42" font-size="11.5" fill="#0a1628">"Open legacy form" surfaces only for</text>
+      <text x="18" y="56" font-size="11.5" fill="#0a1628">standard promo types and admin users.</text>
+      <text x="18" y="76" font-size="11" fill="#6b6c72">Power users editing well-known configs</text>
+      <text x="18" y="90" font-size="11" fill="#6b6c72">still get the form. Conversation is default.</text>
+    </g>
+  </g>
+</svg>

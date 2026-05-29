@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <defs>
+    <filter id="ts-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="0" dy="4"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".22"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <text x="600" y="34" text-anchor="middle" font-family="Inter Tight, sans-serif" font-size="11" font-weight="600" letter-spacing=".14em" fill="#6b6c72">TWO SURFACES · A DELIBERATE SPLIT</text>
+
+  <!-- ===== LEFT: AGENT ===== -->
+  <g transform="translate(60 70)" font-family="Inter Tight, sans-serif" filter="url(#ts-shadow)">
+    <rect width="520" height="490" rx="12" fill="#fff" stroke="#d4d7dc"/>
+
+    <!-- header -->
+    <rect x="0" y="0" width="520" height="48" rx="12" fill="#f4f3fb"/>
+    <rect x="0" y="36" width="520" height="12" fill="#f4f3fb"/>
+    <circle cx="22" cy="24" r="6" fill="#6c5ce7"/>
+    <text x="40" y="30" font-size="13" font-weight="600" fill="#0a1628">Promotions Agent</text>
+    <g transform="translate(420 14)">
+      <rect width="86" height="20" rx="4" fill="#ece9fd" stroke="#a294f5"/>
+      <text x="43" y="14" text-anchor="middle" font-size="9.5" font-weight="600" fill="#5546d6" letter-spacing=".06em">MCP CONNECTED</text>
+    </g>
+
+    <!-- conversation -->
+    <g transform="translate(20 68)">
+      <!-- turn 1: user -->
+      <g transform="translate(140 0)">
+        <rect width="340" height="40" rx="10" fill="#6c5ce7"/>
+        <text x="16" y="18" font-size="11" font-weight="500" fill="#fff">Hi! I need 20% off on FlowTax Federal</text>
+        <text x="16" y="32" font-size="11" fill="#d5cef9">for SMB customers, July to September.</text>
+      </g>
+      <!-- turn 2: agent disambiguate -->
+      <g transform="translate(0 52)">
+        <rect width="380" height="68" rx="10" fill="#f4f3fb"/>
+        <text x="14" y="20" font-size="11" font-weight="500" fill="#0a1628">Got it. Two clarifications:</text>
+        <text x="14" y="36" font-size="11" fill="#0a1628">· Apply to the standard SKU only, or all variants?</text>
+        <text x="14" y="52" font-size="11" fill="#0a1628">· Stack with the existing Pro-Bundle promo, or replace?</text>
+      </g>
+      <!-- chips -->
+      <g transform="translate(0 128)">
+        <rect width="88" height="22" rx="11" fill="#fff" stroke="#d4d7dc"/>
+        <text x="44" y="15" text-anchor="middle" font-size="10" fill="#0a1628" font-weight="500">Standard only</text>
+        <g transform="translate(96 0)">
+          <rect width="80" height="22" rx="11" fill="#fff" stroke="#d4d7dc"/>
+          <text x="40" y="15" text-anchor="middle" font-size="10" fill="#0a1628" font-weight="500">All variants</text>
+        </g>
+        <g transform="translate(192 0)">
+          <rect width="64" height="22" rx="11" fill="#fff" stroke="#d4d7dc"/>
+          <text x="32" y="15" text-anchor="middle" font-size="10" fill="#0a1628" font-weight="500">Stack</text>
+        </g>
+        <g transform="translate(264 0)">
+          <rect width="64" height="22" rx="11" fill="#fff" stroke="#d4d7dc"/>
+          <text x="32" y="15" text-anchor="middle" font-size="10" fill="#0a1628" font-weight="500">Replace</text>
+        </g>
+      </g>
+      <!-- impact preview card -->
+      <g transform="translate(0 168)">
+        <rect width="460" height="170" rx="10" fill="#fff" stroke="#d4d7dc"/>
+        <rect x="0" y="0" width="4" height="170" rx="2" fill="#6c5ce7"/>
+        <text x="18" y="24" font-size="11" font-weight="600" fill="#0a1628">Impact preview · before commit</text>
+        <text x="18" y="40" font-size="10" fill="#6b6c72">SMB · FlowTax Federal · standard only · Jul 1 – Sep 30 · no stacking</text>
+
+        <!-- 3 metric tiles -->
+        <g transform="translate(18 56)">
+          <rect width="132" height="62" rx="6" fill="#f8f7fc"/>
+          <text x="14" y="22" font-size="11" fill="#6b6c72">Eligible accounts</text>
+          <text x="14" y="46" font-size="22" font-weight="700" fill="#0a1628">12,840</text>
+          <g transform="translate(140 0)">
+            <rect width="132" height="62" rx="6" fill="#f8f7fc"/>
+            <text x="14" y="22" font-size="11" fill="#6b6c72">Est. revenue impact</text>
+            <text x="14" y="46" font-size="22" font-weight="700" fill="#c14d2e">−$184k</text>
+          </g>
+          <g transform="translate(280 0)">
+            <rect width="132" height="62" rx="6" fill="#f8f7fc"/>
+            <text x="14" y="22" font-size="11" fill="#6b6c72">Stacking conflicts</text>
+            <text x="14" y="46" font-size="22" font-weight="700" fill="#27a55a">0</text>
+          </g>
+        </g>
+
+        <g transform="translate(18 128)">
+          <rect width="120" height="28" rx="4" fill="#fff" stroke="#d4d7dc"/>
+          <text x="60" y="18" text-anchor="middle" font-size="11" fill="#0a1628" font-weight="500">Edit</text>
+          <g transform="translate(130 0)">
+            <rect width="160" height="28" rx="4" fill="#27a55a"/>
+            <text x="80" y="18" text-anchor="middle" font-size="11" fill="#fff" font-weight="600">Commit promotion</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ===== RIGHT: WIDGET ===== -->
+  <g transform="translate(620 70)" font-family="Inter Tight, sans-serif" filter="url(#ts-shadow)">
+    <rect width="520" height="490" rx="12" fill="#fff" stroke="#d4d7dc"/>
+
+    <!-- header -->
+    <rect x="0" y="0" width="520" height="48" rx="12" fill="#f5f6f8"/>
+    <rect x="0" y="36" width="520" height="12" fill="#f5f6f8"/>
+    <text x="20" y="30" font-size="13" font-weight="600" fill="#0a1628">Active promotions · widget view</text>
+    <g transform="translate(340 14)">
+      <rect width="160" height="20" rx="4" fill="#fff" stroke="#d4d7dc"/>
+      <text x="80" y="14" text-anchor="middle" font-size="9.5" font-weight="500" fill="#6b6c72">Edit in agent · Open legacy form</text>
+    </g>
+
+    <!-- promo card 1 -->
+    <g transform="translate(20 68)">
+      <rect width="480" height="124" rx="10" fill="#fff" stroke="#d4d7dc"/>
+      <rect x="0" y="0" width="480" height="6" rx="3" fill="#6c5ce7"/>
+      <text x="20" y="32" font-size="13" font-weight="600" fill="#0a1628">FY26-Q3 · SMB · FlowTax Federal · 20% off</text>
+      <g transform="translate(380 18)">
+        <rect width="80" height="20" rx="10" fill="#dcf5e2"/>
+        <text x="40" y="14" text-anchor="middle" font-size="9.5" font-weight="600" fill="#1a7c45" letter-spacing=".06em">ACTIVE</text>
+      </g>
+      <text x="20" y="58" font-size="11" fill="#0a1628">20% off the standard SKU for SMB customers from Jul 1 to Sep 30.</text>
+      <text x="20" y="74" font-size="11" fill="#0a1628">Does not stack with Pro-Bundle.</text>
+      <text x="20" y="100" font-size="10" fill="#6b6c72">Owner s.kumar · Last edited 3d ago · 12,840 eligible</text>
+    </g>
+
+    <!-- promo card 2 -->
+    <g transform="translate(20 208)">
+      <rect width="480" height="124" rx="10" fill="#fff" stroke="#d4d7dc"/>
+      <rect x="0" y="0" width="480" height="6" rx="3" fill="#f0a83a"/>
+      <text x="20" y="32" font-size="13" font-weight="600" fill="#0a1628">FY26-Q3 · Pro Bundle · Buy 2 Get 1 (services)</text>
+      <g transform="translate(380 18)">
+        <rect width="80" height="20" rx="10" fill="#fff3df"/>
+        <text x="40" y="14" text-anchor="middle" font-size="9.5" font-weight="600" fill="#8a5e10" letter-spacing=".06em">SCHEDULED</text>
+      </g>
+      <text x="20" y="58" font-size="11" fill="#0a1628">Customers buying 2 service SKUs get the third at no charge.</text>
+      <text x="20" y="74" font-size="11" fill="#0a1628">Starts Aug 1.</text>
+      <text x="20" y="100" font-size="10" fill="#6b6c72">Owner m.thomas · Last edited 1d ago · ~4,200 eligible</text>
+    </g>
+
+    <!-- promo card 3 (custom) -->
+    <g transform="translate(20 348)">
+      <rect width="480" height="124" rx="10" fill="#fff" stroke="#d4d7dc"/>
+      <rect x="0" y="0" width="480" height="6" rx="3" fill="#27a55a"/>
+      <text x="20" y="32" font-size="13" font-weight="600" fill="#0a1628">FY26-Q2 · Price Lock · Premium tier · 14mo</text>
+      <g transform="translate(380 18)">
+        <rect width="80" height="20" rx="10" fill="#dcf5e2"/>
+        <text x="40" y="14" text-anchor="middle" font-size="9.5" font-weight="600" fill="#1a7c45" letter-spacing=".06em">ACTIVE</text>
+      </g>
+      <text x="20" y="58" font-size="11" fill="#0a1628">Locks the Premium-tier price for 14 months from signup date — a</text>
+      <text x="20" y="74" font-size="11" fill="#0a1628">custom promo authored conversationally, no engineering ticket.</text>
+      <text x="20" y="100" font-size="10" fill="#6b6c72">Owner s.kumar · Authored via agent · 1,940 eligible</text>
+    </g>
+  </g>
+
+  <!-- column captions -->
+  <g font-family="Inter Tight, sans-serif">
+    <text x="320" y="585" text-anchor="middle" font-size="13" font-weight="600" fill="#6c5ce7">The Agent — chat-driven authoring</text>
+    <text x="880" y="585" text-anchor="middle" font-size="13" font-weight="600" fill="#0a1628">The Widget — read-only default landing</text>
+  </g>
+</svg>

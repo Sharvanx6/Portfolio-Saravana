@@ -1398,7 +1398,7 @@ main{ padding-top: var(--nav-h); }
    INTUIT B&S — case-study components
    ============================================ */
 
-/* Section numbering in case-num — already styled, but the Intuit case uses
+/* Section numbering in case-num — already styled, but the case studies use
    numbered eyebrows; existing .case-num handles it */
 
 /* 01 · Overview — two-column role/scope */
@@ -2311,7 +2311,7 @@ a.contact__value:hover{ color: var(--accent); }
         <div class="hero__bio">
           <p>Hi, I'm <strong>Saravana</strong> — a Product Designer with over 6 years of experience specializing in AI-driven user research and design.</p>
           <p>I work on digital products for high-profile clients, leveraging AI's analytical and predictive capabilities to deliver innovative, user-centered solutions.</p>
-          <p>I do vibe coding with <strong>Claude AI</strong> and <strong>Figma Make</strong> to accelerate application design workflows and enhance prompt-driven design processes.</p>
+          <p>Currently, I'm exploring tools like <strong>Claude AI</strong> and <strong>Figma Make</strong> to accelerate application design workflows and enhance prompt-driven design processes.</p>
         </div>
       </div>
     </div>
@@ -2408,13 +2408,23 @@ a.contact__value:hover{ color: var(--accent); }
       <p>Six projects across Fintech, Automotive, Logistics, Fitness, and AI-assisted product design — each a story of research, collaboration, and the translation of intricate workflows into clear, user-centered design.</p>
     </header>
     <div class="projects-grid">
+      <a class="tile reveal" href="#projects/promo-agent">
+        <div class="tile__art"><img src="assets/images/tile-promo-agent.svg" alt="Promotions — Agentic AI — a conversational AI agent for promotional offer authoring at a leading US financial software company" /></div>
+        <div class="tile__overlay"></div>
+        <div class="tile__caption">
+          <p class="tile__eyebrow">Fintech · Conversational AI · Web App</p>
+          <h3 class="tile__name">Promotions — <em>Agentic AI</em></h3>
+          <p class="tile__company">Leading US Financial Software Co.</p>
+        </div>
+        <span class="tile__cta" aria-hidden="true">→</span>
+      </a>
       <a class="tile reveal" href="#projects/intuit-bs">
-        <div class="tile__art"><img src="assets/images/tile-intuit-bs.svg" alt="Subscription Flows, Built with Claude AI — an AI-assisted UX framework for Intuit" /></div>
+        <div class="tile__art"><img src="assets/images/tile-intuit-bs.svg" alt="Subscription Flows, Built with Claude AI — an AI-assisted UX framework for a leading US financial software company" /></div>
         <div class="tile__overlay"></div>
         <div class="tile__caption">
           <p class="tile__eyebrow">Fintech · AI · Web Application</p>
           <h3 class="tile__name">Subscription Flows, Built with <em>Claude AI</em></h3>
-          <p class="tile__company">Intuit</p>
+          <p class="tile__company">Leading US Financial Software Co.</p>
         </div>
         <span class="tile__cta" aria-hidden="true">→</span>
       </a>
@@ -2470,6 +2480,359 @@ a.contact__value:hover{ color: var(--accent); }
       </a>
     </div>
   </section>
+
+  <!-- ===== PROMOTIONS — AGENTIC AI ===== -->
+  <section class="subpage" data-subpage="promo-agent">
+    <section class="proj-hero">
+      <a class="btn-back" href="#projects">Back to Projects</a>
+      <span class="proj-hero__co" style="margin-top:1.5rem">Leading US Financial Software Co. · Fintech · Conversational AI</span>
+      <h1 class="proj-hero__title">Promotions — <em>Agentic AI</em></h1>
+      <p class="proj-hero__desc">A conversational AI agent that authors promotional offers — backed by an MCP server that exposes the underlying pricing engine's capabilities as callable tools. Two surfaces, deliberately split: an Agent for authoring, and a read-only Widget that replaces a 22-field legacy console. Custom promos that used to take three to seven days now ship in under ten minutes.</p>
+      <dl class="proj-meta">
+        <div><dt>Role</dt><dd>Sr. UX Designer · Conversational AI</dd></div>
+        <div><dt>Industry</dt><dd>Fintech · Enterprise Commerce</dd></div>
+        <div><dt>Platform</dt><dd>Web Application</dd></div>
+        <div><dt>Year</dt><dd>2026</dd></div>
+      </dl>
+    </section>
+
+    <!-- 1. PROJECT OVERVIEW -->
+    <section class="case-sec">
+      <span class="case-num">01 · Project Overview</span>
+      <h2>The engine could do <em>everything</em>. The console could only ask for <em>some of it</em>.</h2>
+      <p class="case-lead">The pricing engine that powered every promotional offer across the product suite already supported five complex promo types — Price Locks, Caps, Buy-X-Get-Y, Dynamic Expiry, Balance Manager. But the legacy authoring console only shipped forms for the standard cases. Anything else was an engineering ticket: three to seven days, often longer. I had two options on the table — keep shipping more rigid forms forever, or take a deliberate conversational bet.</p>
+      <div class="overview-grid">
+        <div>
+          <h4>My role</h4>
+          <p>Owned the end-to-end design of both surfaces — the conversational Agent and the read-only Widget — alongside the MCP tool design that lets the agent invoke the engine's full capability surface. Led the discovery shadowing, conversation prototyping, and the four iteration rounds that shaped the final flow.</p>
+        </div>
+        <div>
+          <h4>Scope of work</h4>
+          <p>Field-level audit of the legacy console → analyst shadowing → capability mapping (engine API → MCP tool definitions) → conversation prototyping → impact-preview design → four iteration cycles with pricing analysts and the engineering team that maintains the engine.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. PROBLEM SPACE -->
+    <section class="case-sec">
+      <span class="case-num">02 · Problem Space</span>
+      <h2>A 22-field form, and the silence <em>before sending a ticket</em></h2>
+      <p class="case-lead">The legacy authoring console was a dense, branchy form: twenty-two visible fields, conditional sections that appeared and disappeared based on opaque rules, and no preview of who the promo would actually touch. Analysts described it the same way every time — <em>"I'm guessing at the shape of the rule until something either saves or doesn't."</em></p>
+      <div class="case-img"><img src="assets/images/promo-legacy-form.svg" alt="Annotated screenshot of the legacy authoring console — 22 form fields grouped into Eligibility, Pricing rule, Schedule and Targeting sections, with red callouts marking redundant fields and conditionally-visible blocks"></div>
+      <div class="problem-pillars">
+        <div class="problem-pillar">
+          <h4>Cognitive overload by default</h4>
+          <p>Twenty-two fields, six of which only made sense for one of the five promo types. Analysts had to recall which fields applied to which type — the form didn't help.</p>
+        </div>
+        <div class="problem-pillar">
+          <h4>Custom = ticket</h4>
+          <p>Anything outside the four standard configurations meant filing an engineering ticket. Typical cycle: three to seven days. Quarterly rush periods: ten to fourteen.</p>
+        </div>
+        <div class="problem-pillar">
+          <h4>No impact preview</h4>
+          <p>Save the form, hope the rule fires on the right cohort. Mistakes surfaced in customer support tickets, not in the authoring surface. There was no "who will this apply to and when" before commit.</p>
+        </div>
+        <div class="problem-pillar">
+          <h4>Capability ↔ surface mismatch</h4>
+          <p>The engine could compose far more sophisticated rules than the console could express. Capability that engineers reached via direct API calls; the people who actually understood the offers — pricing analysts — couldn't touch it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. DESIGN GOALS -->
+    <section class="case-sec">
+      <span class="case-num">03 · Design Goals</span>
+      <h2>Two surfaces, <em>deliberately split</em></h2>
+      <p class="case-lead">Before any prototype, the team agreed on five outcomes. These framed every later trade-off — particularly the decision to keep the legacy form alive as a toggle rather than replacing it wholesale.</p>
+      <ol class="goals">
+        <li>
+          <span class="goals__num">G1</span>
+          <div>
+            <h4>Authoring through conversation</h4>
+            <p>The agent's job is composition, not data entry. The analyst describes intent ("ten-percent off for new SMB signups, last week of the quarter") and the agent assembles the engine call — not the other way round.</p>
+          </div>
+        </li>
+        <li>
+          <span class="goals__num">G2</span>
+          <div>
+            <h4>Read-only widget as the default landing</h4>
+            <p>Most of the day, an analyst is checking that a promo is still firing correctly — not authoring a new one. The default surface is a read-only widget showing the rule in plain English, its scope, and its history. Authoring is one click away, not the front door.</p>
+          </div>
+        </li>
+        <li>
+          <span class="goals__num">G3</span>
+          <div>
+            <h4>Structured affordances baked in</h4>
+            <p>Free-text conversation alone collapsed in early prototyping — too many jargon failures, too many ambiguous references. The final agent leads with chips, scoped pickers, and progressive counters wherever a structured choice is faster than a sentence.</p>
+          </div>
+        </li>
+        <li>
+          <span class="goals__num">G4</span>
+          <div>
+            <h4>Impact preview before commit</h4>
+            <p>No promo can be saved without the agent first surfacing who it will apply to, when it will fire, and the projected financial impact at the planned scale. A deliberate friction step — the one place we wanted the analyst to slow down.</p>
+          </div>
+        </li>
+        <li>
+          <span class="goals__num">G5</span>
+          <div>
+            <h4>Don't kill the legacy form — toggle it</h4>
+            <p>For the four standard cases the legacy form was still the fastest path for an experienced analyst. We kept it as an opt-in toggle from inside the widget. The agent earns its keep on the custom cases; the form keeps its place on the routine ones.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 4. DISCOVERY & RESEARCH -->
+    <section class="case-sec">
+      <span class="case-num">04 · Discovery &amp; Research</span>
+      <h2>Eight analysts, <em>one engineer's quiet confession</em></h2>
+      <p class="case-lead">I shadowed eight pricing analysts across two weeks of normal authoring work — not a contrived test, just their real queue. I also sat with two of the engineers who fielded the custom-promo tickets. One of them said something that became the project's quiet north star: <em>"I do the same configs every quarter — I should be a function call."</em> That sentence was the brief.</p>
+      <div class="research-takeaways">
+        <h3 class="research-takeaways__heading">What the shadowing surfaced</h3>
+        <div class="research-takeaways__grid">
+          <div>
+            <h4>Fourteen fields were doing redundant work</h4>
+            <p>A field-level audit of the console showed fourteen of the twenty-two fields were derivable from two or three upstream answers. Analysts were filling in implications they'd already given the form.</p>
+          </div>
+          <div>
+            <h4>Six fields needed entirely different UI per type</h4>
+            <p>The "scope" field meant six different things across the five promo types. A single text input was being asked to carry six structurally different selections — which is why it broke on every custom case.</p>
+          </div>
+          <div>
+            <h4>Analysts talked about promos in <em>sentences</em>, not fields</h4>
+            <p>When describing what they wanted to ship — to a teammate, to me, to their manager — every analyst used natural language. The conversion from sentence to form was the cognitive tax we kept measuring.</p>
+          </div>
+          <div>
+            <h4>The riskiest moment was always "save"</h4>
+            <p>Eight of eight analysts paused, re-read the form, and asked a colleague to glance at it before saving anything non-standard. The impact preview replaces that informal sanity check with a structured one.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. THE TWO SURFACES -->
+    <section class="case-sec">
+      <span class="case-num">05 · The Two Surfaces</span>
+      <h2>A read-only widget by default. <em>A conversation when something needs to change.</em></h2>
+      <p class="case-lead">The architecture is two surfaces, deliberately split by intent. The Widget owns the steady state — the answer to "is this promo still doing what I think it's doing?" The Agent owns the change moment — authoring new offers and modifying existing ones. The split mirrors how analysts actually work: most of the day in monitoring, occasionally in authoring.</p>
+      <div class="case-img"><img src="assets/images/promo-two-surfaces.svg" alt="Side-by-side comparison of the two surfaces — the Widget showing a read-only promo summary with rule, scope, history and actions; the Agent showing a five-turn conversation that lands on an impact preview before commit"></div>
+      <div class="overview-grid">
+        <div>
+          <h4>The Widget · steady state</h4>
+          <p>A read-only card that renders any promo as a plain-English sentence ("10% off Plus subscriptions for new SMB signups, June 24–30, US only"), with its scope, recent history, and a row of actions. The default landing — and the surface analysts spend most of their day inside. Never asks for input until the analyst explicitly chooses to change something.</p>
+        </div>
+        <div>
+          <h4>The Agent · change state</h4>
+          <p>A chat-driven authoring surface backed by an MCP server that exposes the engine's full capability set as callable tools. The agent disambiguates intent, confirms scope, previews impact, and only then commits — five turns end-to-end on a typical custom promo. Free-text input is bracketed by chips and scoped pickers everywhere structured selection is faster.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. THE AGENT &amp; THE WIDGET -->
+    <section class="case-sec">
+      <span class="case-num">06 · The Agent &amp; The Widget</span>
+      <h2>Designed as <em>one system</em>, expressed as two surfaces</h2>
+      <p class="case-lead">Every authoring session starts in the Widget and ends in the Widget. The Agent is the connector — invoked when the analyst presses <em>Modify</em>, dismissed once a change commits. Detailing each surface in turn.</p>
+
+      <h3 class="builder-section__heading">The Agent · a five-turn walkthrough</h3>
+      <p class="builder-section__lead">A typical custom-promo authoring session, end-to-end. Five turns. Each turn does a specific job; none of them are filler.</p>
+      <div class="case-img"><img src="assets/images/promo-agent-flow.svg" alt="Five-turn agent conversation — Intent, Disambiguate, Confirm scope, Impact preview, Commit — with the three design principles guiding each turn"></div>
+      <div class="builder-steps">
+        <div class="builder-step">
+          <span class="builder-step__num">01</span>
+          <h4>Intent · what are we trying to ship?</h4>
+          <p>The analyst opens the agent and types or speaks the offer in plain language: <em>"Ten percent off Plus for new SMB signups, last week of June."</em> The agent does not try to fill a form yet. It parrots the intent back as a structured summary and offers two chips: <em>refine</em> and <em>looks right</em>.</p>
+        </div>
+        <div class="builder-step">
+          <span class="builder-step__num">02</span>
+          <h4>Disambiguate · what's still ambiguous?</h4>
+          <p>The agent asks at most two follow-ups, always with chips, never as open prose: <em>"By 'new SMB' do you mean signed up in the last 30 days, or never had a Plus subscription before?"</em> Each chip is a concrete predicate the engine can evaluate. If the analyst answers in prose, the agent translates it back into the same chip vocabulary so the underlying rule stays inspectable.</p>
+        </div>
+        <div class="builder-step">
+          <span class="builder-step__num">03</span>
+          <h4>Confirm scope · who and when</h4>
+          <p>The agent renders the full rule as a single readable sentence — the same format the Widget will eventually display — and shows a scope counter: <em>"~3,800 accounts in the eligibility window. June 24 00:00 → June 30 23:59 US/Pacific."</em> The counter updates live as the analyst tweaks predicates. Crucially, this turn is editable — chips are still active.</p>
+        </div>
+        <div class="builder-step">
+          <span class="builder-step__num">04</span>
+          <h4>Impact preview · the friction step</h4>
+          <p>The agent invokes a dry-run tool against the engine and surfaces three numbers: accounts touched, projected discount cost at planned uptake, and any policy flags (price-floor violations, overlap with an existing promo, audit-trail gaps). This turn cannot be skipped. About one in four drafts gets caught here — wrong cohort, double-discount overlap, expired pricing-floor exception. The analyst can fix in place or abandon.</p>
+        </div>
+        <div class="builder-step">
+          <span class="builder-step__num">05</span>
+          <h4>Commit · and back to the widget</h4>
+          <p>One confirmation. The agent calls the engine's commit tool, the widget refreshes with the new promo as its plain-English sentence, and the conversation collapses into a single audit-trail entry the analyst can re-open. No celebratory modal, no fanfare — the change is the success.</p>
+        </div>
+      </div>
+
+      <h3 class="builder-section__heading" style="margin-top:5rem">The Widget · anatomy</h3>
+      <p class="builder-section__lead">What the analyst sees the other 95% of the time. Four regions, each load-bearing.</p>
+      <div class="case-img"><img src="assets/images/promo-widget-anatomy.svg" alt="Annotated widget anatomy — Region A header with promo name and status, Region B the rule rendered in plain English, Region C scope and history, Region D action row with Modify, Pause and View raw"></div>
+      <div class="builder-features">
+        <div class="builder-feature">
+          <h4>A · Header &amp; status</h4>
+          <p>Promo name, owner, status pill (<em>Live</em>, <em>Scheduled</em>, <em>Paused</em>, <em>Expired</em>), and time-to-next-state. Glance-readable. No interaction beyond opening the action menu.</p>
+        </div>
+        <div class="builder-feature">
+          <h4>B · The rule, in plain English</h4>
+          <p>The full rule as a single sentence, generated from the structured rule the engine holds — never the other way round. Hover-to-reveal shows the underlying predicate vocabulary; click-to-expand shows the raw engine spec for engineering review. This sentence <em>is</em> the contract between the analyst and the engine.</p>
+        </div>
+        <div class="builder-feature">
+          <h4>C · Scope &amp; history</h4>
+          <p>Live accounts in window, lifetime fires, last-touched timestamp, and a sparkline of daily redemptions. Three numbers analysts asked for in shadowing — and didn't have anywhere before.</p>
+        </div>
+        <div class="builder-feature">
+          <h4>D · Actions</h4>
+          <p>Three primary actions — <em>Modify</em> (opens the agent with the current rule pre-loaded), <em>Pause</em>, <em>View raw</em>. A discreet overflow menu carries <em>Open in legacy console</em>, the conditional toggle that lets veteran analysts fall back to the form for standard cases.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. WORKFLOW CHANGE -->
+    <section class="case-sec">
+      <span class="case-num">07 · Workflow Change</span>
+      <h2>From five handoffs to <em>one surface</em></h2>
+      <p class="case-lead">The structural unlock isn't conversational UX. It's that the agent has tools the analyst didn't. The MCP server exposes the engine's full capability set — eligibility predicates, scope evaluation, dry-run, commit, audit — as discrete tool calls. The agent stitches those into a conversation; the analyst doesn't need to file a ticket anymore because the function call already exists.</p>
+      <div class="case-img"><img src="assets/images/promo-workflow-change.svg" alt="Before-and-after workflow comparison — Before: analyst → form → ticket → engineer → engine → QA → release, with 3-7 day lag and five handoffs. After: analyst → agent → MCP tool → engine, with under 10 minutes and one surface. Plus a panel showing the MCP tool surface that the agent invokes"></div>
+      <div class="builder-features">
+        <div class="builder-feature">
+          <h4>Before · five handoffs, three to seven days</h4>
+          <p>Analyst drafts in the form, hits a custom case, files a ticket. Engineer reads the ticket, writes engine config, opens a PR. QA validates against staging. Release rides the next deploy. The analyst learns whether the promo behaves correctly when the customer-support queue spikes — or doesn't.</p>
+        </div>
+        <div class="builder-feature">
+          <h4>After · one surface, under ten minutes</h4>
+          <p>Analyst opens the widget, presses <em>Modify</em>, completes the five-turn agent flow, commits. The same engine receives the same call it would have received via the engineer — only authored by the person who actually understood the offer in the first place.</p>
+        </div>
+        <div class="builder-feature">
+          <h4>Under the hood · MCP as the bridge</h4>
+          <p>The MCP server exposes seven tools — <em>list_predicates</em>, <em>resolve_scope</em>, <em>preview_impact</em>, <em>list_overlaps</em>, <em>commit_promo</em>, <em>pause_promo</em>, <em>get_audit</em>. Each maps one-to-one onto an existing engine capability. The agent picks tools; the engine doesn't know it's being talked to by a conversation.</p>
+        </div>
+        <div class="builder-feature">
+          <h4>What didn't change</h4>
+          <p>The engine itself. The policy approval chain. The audit trail. Eliminating handoffs doesn't mean eliminating oversight — every committed promo still emits the same audit record the legacy console did, with the conversation transcript attached.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. DESIGN PROCESS -->
+    <section class="case-sec">
+      <span class="case-num">08 · Design Process</span>
+      <h2>Six stages, <em>field audit to iteration</em></h2>
+      <p class="case-lead">The process moved deliberately from understanding the existing form to prototyping the conversation that would partially replace it. Each stage's output was the next stage's input — no parallel streams.</p>
+      <div class="case-img"><img src="assets/images/promo-process.svg" alt="Six-stage design process — Field audit, User shadowing, Capability mapping (engine API to MCP tools), Conversation prototyping, Impact-preview design, Iteration cycles"></div>
+      <ol class="process-detailed">
+        <li>
+          <h4>Field audit</h4>
+          <p>Twenty-two fields. Which ones earned their place? The audit showed fourteen were derivable and six needed structurally different UI per promo type — the data that justified the split.</p>
+        </li>
+        <li>
+          <h4>User shadowing</h4>
+          <p>Eight pricing analysts, two weeks, real queue. Mapped where the legacy form actually broke — not in usability tests but in the unscripted moments analysts asked a colleague to look at the screen.</p>
+        </li>
+        <li>
+          <h4>Capability mapping · engine API → MCP tools</h4>
+          <p>Reviewed the engine's public capability surface with the engineering team. Defined seven MCP tools that map one-to-one onto engine operations. The agent's vocabulary is constrained to what the engine can actually do.</p>
+        </li>
+        <li>
+          <h4>Conversation prototyping</h4>
+          <p>Worked through dozens of authoring transcripts on paper before any UI — turn structure, chip vocabulary, disambiguation patterns. The five-turn shape emerged here.</p>
+        </li>
+        <li>
+          <h4>Impact-preview design</h4>
+          <p>The friction step. Designed so that commit cannot happen without surfacing scope, cost projection and policy flags. Tested specifically for whether it slowed analysts enough to catch errors without becoming the new bottleneck.</p>
+        </li>
+        <li>
+          <h4>Iteration cycles</h4>
+          <p>Four rounds — each broke something useful. The free-text-only v1, the surprise-impact v2, the edit-lost-context v3, the approval-ambush v4. Each round's failure mode became the next round's design constraint.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 9. ITERATION &amp; FEEDBACK -->
+    <section class="case-sec">
+      <span class="case-num">09 · Iteration &amp; Feedback</span>
+      <h2>Four versions, <em>each broke something useful</em></h2>
+      <p class="case-lead">Conversational UX punishes premature elegance. The first three versions all looked correct on paper and failed in different ways in front of real analysts. Documenting the failures because they're more instructive than the final shape.</p>
+      <div class="case-img"><img src="assets/images/promo-iterations.svg" alt="v1 to v4 iteration grid — v1 free-text broke on jargon, v2 surprise impact at commit, v3 edit lost context, v4 approval ambush; each cell shows what broke and what the next version did about it"></div>
+      <div class="learnings">
+        <div class="learning">
+          <span class="learning__num">v1</span>
+          <h4>Free-text alone → jargon barrier</h4>
+          <p>The first prototype was a clean chat interface, no chips, no scoped pickers. It collapsed within five minutes of every session — analysts used domain shorthand the agent couldn't reliably parse ("SMB tier-2 GA cohort"), and the agent's clarifying questions arrived as more prose, compounding the load. <strong>Next version:</strong> chips and scoped pickers for every concrete predicate, prose reserved for intent and confirmation only.</p>
+        </div>
+        <div class="learning">
+          <span class="learning__num">v2</span>
+          <h4>Impact arrived as a surprise at commit</h4>
+          <p>v2 had structured affordances but only surfaced the impact preview at the final commit step, as a confirmation modal. Analysts had already mentally moved on by then — they were skim-clicking <em>Confirm</em> without reading. Impact had to be a turn, not a modal. <strong>Next version:</strong> impact became turn 4 of the conversation, with the scope counter live-updating from turn 3 onward.</p>
+        </div>
+        <div class="learning">
+          <span class="learning__num">v3</span>
+          <h4>Editing an existing promo lost the original context</h4>
+          <p>Modifying an existing promo opened a fresh agent conversation, blank — the analyst had to re-describe the offer just to tweak its end date. <strong>Next version:</strong> <em>Modify</em> pre-loads the current rule into the agent as a structured summary, and the conversation opens with <em>"What's changing?"</em> — not <em>"What are we shipping?"</em></p>
+        </div>
+        <div class="learning">
+          <span class="learning__num">v4</span>
+          <h4>Approval gated commit, but invisibly</h4>
+          <p>Some promos need policy approval before commit. v3 routed those silently to an approval queue with no signal to the analyst. They thought commit had succeeded; it was actually pending review. <strong>Next version:</strong> the approval requirement surfaces inline during the impact-preview turn — chip-labelled, with the approver named — so the analyst either pings the approver in-context or knows to wait.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. OUTCOMES &amp; KEY LEARNINGS -->
+    <section class="case-sec">
+      <span class="case-num">10 · Outcomes &amp; Key Learnings</span>
+      <h2>What the split <em>actually changed</em></h2>
+      <p class="case-lead">Numbers from the first quarter after rollout, alongside the three lessons I'll carry into the next conversational-agent project.</p>
+      <div class="outcomes">
+        <div class="outcome">
+          <span class="outcome__metric">3–7d → ~10m</span>
+          <h4>custom promo authoring time</h4>
+          <p>Custom promos that used to cycle through an engineering ticket now ship in the same session the analyst conceives them.</p>
+        </div>
+        <div class="outcome">
+          <span class="outcome__metric">0</span>
+          <h4>engineering tickets for promo authoring</h4>
+          <p>The custom-promo ticket queue went to zero in the first quarter. Engineering time returned to engine work, not config-writing.</p>
+        </div>
+        <div class="outcome">
+          <span class="outcome__metric">60%</span>
+          <h4>of standard promos authored via the agent</h4>
+          <p>Analysts didn't have to use the agent for standard cases — the legacy form was still right there as a toggle. They chose it anyway, six times out of ten. That preference was the real signal.</p>
+        </div>
+        <div class="outcome">
+          <span class="outcome__metric">1 in 4</span>
+          <h4>drafts caught at impact preview</h4>
+          <p>Roughly a quarter of authoring sessions reach the impact-preview turn and surface a problem — wrong cohort, overlapping promo, policy flag. The friction step earned its place.</p>
+        </div>
+      </div>
+
+      <h3 class="research-takeaways__heading" style="margin-top:4rem">Three lessons I'll carry forward</h3>
+      <div class="learnings">
+        <div class="learning">
+          <span class="learning__num">L1</span>
+          <h4>Conversation only works with structured affordances</h4>
+          <p>The romantic version — a clean chat interface, free-text in, perfect-output out — failed in five minutes flat. Chips, scoped pickers, and progressive counters aren't compromises against the conversational ideal; they're what makes the conversation reliable. The chat is the connective tissue, not the entire body.</p>
+        </div>
+        <div class="learning">
+          <span class="learning__num">L2</span>
+          <h4>Read-only by default is a quiet revolution</h4>
+          <p>The decision that mattered most wasn't anything about the agent — it was making the widget the default landing. Most of the day, the analyst is checking, not authoring. A surface that doesn't ask for input until input is wanted removes more friction than any number of cleverly designed forms.</p>
+        </div>
+        <div class="learning">
+          <span class="learning__num">L3</span>
+          <h4>The agent isn't replacing the form — it's replacing the engineering ticket</h4>
+          <p>The framing I almost got wrong: the agent vs. the form. The legacy form is fine for the cases it was built for, and analysts still prefer it on those cases. The real thing the agent replaced was the three-to-seven-day round trip through the engineering ticket queue. Any time a UI exists primarily to serialise intent into a ticket, there's a conversational opportunity hiding behind it.</p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="proj-nav">
+      <a href="#projects/livfit"><span>Previous</span><strong>← Livfit</strong></a>
+      <a class="proj-nav__next" href="#projects/intuit-bs"><span>Next</span><strong>Subscription Flows · Claude AI →</strong></a>
+    </nav>
+  </section>
+
 
   <!-- ===== FORD VSU ===== -->
   <section class="subpage" data-subpage="vsu">
@@ -3674,15 +4037,15 @@ a.contact__value:hover{ color: var(--accent); }
 
     <nav class="proj-nav">
       <a href="#projects/smart-locker"><span>Previous</span><strong>← QikPod</strong></a>
-      <a class="proj-nav__next" href="#projects/intuit-bs"><span>Next</span><strong>Subscription Flows · Claude AI →</strong></a>
+      <a class="proj-nav__next" href="#projects/promo-agent"><span>Next</span><strong>Promotions · Agentic AI →</strong></a>
     </nav>
   </section>
 
-  <!-- ===== SUBSCRIPTION FLOWS, BUILT WITH CLAUDE AI (Intuit) ===== -->
+  <!-- ===== SUBSCRIPTION FLOWS, BUILT WITH CLAUDE AI ===== -->
   <section class="subpage" data-subpage="intuit-bs">
     <section class="proj-hero">
       <a class="btn-back" href="#projects">Back to Projects</a>
-      <span class="proj-hero__co" style="margin-top:1.5rem">Intuit · Fintech · AI-assisted</span>
+      <span class="proj-hero__co" style="margin-top:1.5rem">Leading US Financial Software Co. · Fintech · AI-assisted</span>
       <h1 class="proj-hero__title">Subscription Flows, <em>Built with Claude AI</em></h1>
       <p class="proj-hero__desc">A subscription UX framework designed in deliberate partnership with Claude AI — used as an ideation accelerator, edge-case probe, and pattern-variant generator. The output isn't a stack of mockups; it's a reusable, configurable system any product team can extend.</p>
       <dl class="proj-meta">
@@ -3701,11 +4064,11 @@ a.contact__value:hover{ color: var(--accent); }
       <div class="overview-grid">
         <div>
           <h4>My role</h4>
-          <p>Defined the strategy, the framework architecture, the methodology by which AI was integrated, and led the human-side curation and validation. Owned design system alignment with IDS, accessibility audits, and stakeholder buy-in across six product teams.</p>
+          <p>Defined the strategy, the framework architecture, the methodology by which AI was integrated, and led the human-side curation and validation. Owned design system alignment, accessibility audits, and stakeholder buy-in across six product teams.</p>
         </div>
         <div>
           <h4>Scope of work</h4>
-          <p>End-to-end: comparative research → pattern taxonomy → an internal "builder" tool that designers and PMs use to assemble lifecycle flows from configurable primitives → handoff guidelines, edge-case playbook, and a published component library extending IDS.</p>
+          <p>End-to-end: comparative research → pattern taxonomy → an internal "builder" tool that designers and PMs use to assemble lifecycle flows from configurable primitives → handoff guidelines, edge-case playbook, and a published component library extending the company's design system.</p>
         </div>
       </div>
     </section>
@@ -3813,7 +4176,7 @@ a.contact__value:hover{ color: var(--accent); }
     <section class="case-sec">
       <span class="case-num">05 · AI-assisted Workflow Strategy</span>
       <h2>Claude as a <em>systems-exploration tool</em></h2>
-      <p class="case-lead">The deliberate framing: AI is best at <strong>breadth</strong>, humans are best at <strong>judgement</strong>. I built a four-stage loop where I framed each scenario, Claude generated 10–15 variants and edge-case branches, I curated against IDS / accessibility / ethics, and the curated decision became a configurable primitive in the builder. Every loop closed by feeding back into the next scenario.</p>
+      <p class="case-lead">The deliberate framing: AI is best at <strong>breadth</strong>, humans are best at <strong>judgement</strong>. I built a four-stage loop where I framed each scenario, Claude generated 10–15 variants and edge-case branches, I curated against the design system / accessibility / ethics, and the curated decision became a configurable primitive in the builder. Every loop closed by feeding back into the next scenario.</p>
       <div class="case-img"><img src="assets/images/intuit-ai-workflow.svg" alt="Four-stage AI-assisted workflow loop — Frame, Explore with AI, Curate with human judgement, Commit to builder"></div>
 
       <h3 class="ai-explore__heading">Where AI actually moved the needle</h3>
@@ -3843,7 +4206,7 @@ a.contact__value:hover{ color: var(--accent); }
       <div class="ai-guard">
         <h4>What AI was explicitly <em>not</em> used for</h4>
         <ul>
-          <li>Final layout decisions, visual hierarchy, or component composition — those were human judgement against IDS specifications.</li>
+          <li>Final layout decisions, visual hierarchy, or component composition — those were human judgement against design system specifications.</li>
           <li>Ethical retention decisions — every dark-pattern temptation Claude proposed was rejected and logged as a learning.</li>
           <li>Final copy that appeared in the product — variants were a starting point; I rewrote the chosen variant for tone and accuracy.</li>
           <li>Anything customer-identifying — all prompts used synthetic personas and anonymised scenarios.</li>
@@ -3866,7 +4229,7 @@ a.contact__value:hover{ color: var(--accent); }
         <article class="method">
           <span class="method__num">M2</span>
           <h4>Atomic design</h4>
-          <p>Created modular building blocks — pricing cards, invoice modules, status banners, plan-comparison blocks, retention cards, payment-recovery patterns. Each block has documented states, variants, and accessibility requirements that conform to IDS tokens.</p>
+          <p>Created modular building blocks — pricing cards, invoice modules, status banners, plan-comparison blocks, retention cards, payment-recovery patterns. Each block has documented states, variants, and accessibility requirements that conform to the design system tokens.</p>
         </article>
         <article class="method">
           <span class="method__num">M3</span>
@@ -3906,7 +4269,7 @@ a.contact__value:hover{ color: var(--accent); }
         <div class="builder-step">
           <span class="builder-step__num">02</span>
           <h4>Compose the flow from primitives</h4>
-          <p>I drag four primitives into the canvas: <em>Subscription card</em> into Step 1, <em>Comparison block</em> into Step 2, <em>Review trowser</em> into Step 3, <em>Confirmation modal</em> into Step 4. Every primitive is already IDS-tokenised — no re-styling needed. Spacing, colour, type and accessibility states are pre-wired.</p>
+          <p>I drag four primitives into the canvas: <em>Subscription card</em> into Step 1, <em>Comparison block</em> into Step 2, <em>Review trowser</em> into Step 3, <em>Confirmation modal</em> into Step 4. Every primitive is already tokenised to the design system — no re-styling needed. Spacing, colour, type and accessibility states are pre-wired.</p>
         </div>
         <div class="builder-step">
           <span class="builder-step__num">03</span>
@@ -3972,11 +4335,11 @@ a.contact__value:hover{ color: var(--accent); }
         </li>
         <li>
           <h4>Pattern consolidation</h4>
-          <p>Curate the variants. Reject the ones that fail clarity, ethics or IDS checks. Name the survivors as named primitives in the library.</p>
+          <p>Curate the variants. Reject the ones that fail clarity, ethics or design system checks. Name the survivors as named primitives in the library.</p>
         </li>
         <li>
           <h4>Component standardization</h4>
-          <p>Translate each curated pattern into IDS-token-compliant components. Document states, accessibility specs, and content slots.</p>
+          <p>Translate each curated pattern into design-system-compliant components. Document states, accessibility specs, and content slots.</p>
         </li>
         <li>
           <h4>Usability refinement</h4>
@@ -4038,7 +4401,7 @@ a.contact__value:hover{ color: var(--accent); }
     </section>
 
     <nav class="proj-nav">
-      <a href="#projects/livfit"><span>Previous</span><strong>← Livfit</strong></a>
+      <a href="#projects/promo-agent"><span>Previous</span><strong>← Promotions · Agentic AI</strong></a>
       <a class="proj-nav__next" href="#projects/vsu"><span>Next</span><strong>Ford VSU →</strong></a>
     </nav>
   </section>
@@ -4112,7 +4475,7 @@ a.contact__value:hover{ color: var(--accent); }
     </div>
   </dl>
 
-  <p class="resume-intro reveal">Hi, I'm Saravana — a Product Designer with over 6 years of experience specializing in AI-driven user research and design. I use machine learning insights to enable predictive analysis, craft personalization strategies, and design intuitive conversational experiences. I work on digital products for high-profile clients, leveraging AI's analytical and predictive capabilities to deliver innovative, user-centered solutions. I do vibe coding with Claude AI and Figma Make to accelerate application design workflows and enhance prompt-driven design processes.</p>
+  <p class="resume-intro reveal">Hi, I'm Saravana — a Product Designer with over 6 years of experience specializing in AI-driven user research and design. I use machine learning insights to enable predictive analysis, craft personalization strategies, and design intuitive conversational experiences. I work on digital products for high-profile clients, leveraging AI's analytical and predictive capabilities to deliver innovative, user-centered solutions. Currently, I'm exploring tools like Claude AI and Figma Make to accelerate application design workflows and enhance prompt-driven design processes.</p>
 
   <div class="resume-sec reveal">
     <h2>Tool <em>Knowledge</em></h2>
@@ -4157,10 +4520,21 @@ a.contact__value:hover{ color: var(--accent); }
       <p class="exp__role">Sr. User Experience Designer</p>
 
       <div class="exp__project">
-        <h4>Intuit — Bills &amp; Subscription flows / Product &amp; Pricing Manager enhancements</h4>
+        <h4>Leading US Financial Software Co. — Conversational AI agent for promotional offer authoring</h4>
+        <ul>
+          <li>Designed a two-surface system — a conversational Agent for authoring custom promotional offers and a read-only Widget as the default landing — backed by an MCP server exposing a pricing engine's full capability surface as callable tools.</li>
+          <li>Reduced custom-promo authoring time from a 3–7 day engineering-ticket round trip to under 10 minutes in a single analyst session, eliminating the custom-promo ticket queue entirely.</li>
+          <li>Shadowed 8 pricing analysts to map where the 22-field legacy authoring console actually broke; designed the impact-preview turn that catches roughly 1 in 4 drafts before commit.</li>
+          <li>Ran four iteration cycles with pricing analysts — each version surfaced a specific failure mode (jargon-on-free-text, surprise-impact-at-commit, edit-lost-context, approval-ambush) that the next version designed against.</li>
+          <li>Defined the seven MCP tools the agent invokes, mapping one-to-one onto existing engine operations so policy, approval and audit-trail behaviour stayed unchanged.</li>
+        </ul>
+      </div>
+
+      <div class="exp__project">
+        <h4>Leading US Financial Software Co. — Bills &amp; Subscription flows / Product &amp; Pricing Manager enhancements</h4>
         <ul>
           <li>Leading the design of an AI-assisted workflow system that generates scalable billing &amp; subscription UX patterns across six product surfaces.</li>
-          <li>Architected a reusable framework of modular flow templates, configurable states, and primitive components extending the Intuit Design System.</li>
+          <li>Architected a reusable framework of modular flow templates, configurable states, and primitive components extending the company's design system.</li>
           <li>Using Claude AI as an ideation accelerator and edge-case probe — exploring upgrade, downgrade, cancellation, failed-payment recovery and plan-comparison patterns.</li>
           <li>Defined a human-curation protocol for AI-suggested variants to ensure clarity, accessibility, and ethical retention design.</li>
           <li>Delivered Figma component libraries and JSON specs consumed directly by product engineering teams.</li>
@@ -4327,7 +4701,7 @@ document.getElementById('y').textContent = new Date().getFullYear();
 (function(){
   'use strict';
   const PAGES = ['about','projects','artworks','resume'];
-  const SUBS  = ['intuit-bs','vsu','loan-app','smis','smart-locker','livfit'];
+  const SUBS  = ['promo-agent','intuit-bs','vsu','loan-app','smis','smart-locker','livfit'];
   const TITLES = {
     about: 'Saravana — Product Designer',
     projects: 'Projects — Saravana',
@@ -4335,12 +4709,13 @@ document.getElementById('y').textContent = new Date().getFullYear();
     resume: 'Resume — Saravana'
   };
   const SUB_TITLES = {
+    'promo-agent': 'Promotions — Agentic AI — Saravana',
     'vsu': 'Vehicle Software Updater — Ford | Saravana',
     'loan-app': 'Loan Application — JPMC | Saravana',
     'smis': 'Member Information System — Wells Fargo | Saravana',
     'smart-locker': 'Smart Locker — QikPod | Saravana',
     'livfit': 'Livfit — Innominds | Saravana',
-    'intuit-bs': 'Subscription Flows, Built with Claude AI — Intuit | Saravana'
+    'intuit-bs': 'Subscription Flows, Built with Claude AI — Saravana'
   };
   function parseHash(){
     const raw = (location.hash || '#about').replace(/^#/,'');
