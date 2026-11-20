@@ -16,6 +16,9 @@ site/
 |---|---|
 | About (default) | `#about` |
 | Projects listing | `#projects` |
+| Customer Order Portal | `#projects/order-portal` |
+| Promotions — Agentic AI | `#projects/promo-agent` |
+| Subscription Flows | `#projects/subscription-flows` |
 | Ford VSU | `#projects/vsu` |
 | JPMC Loan App | `#projects/loan-app` |
 | Wells Fargo MIS | `#projects/smis` |
